@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Alicicfashion - Catálogo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #222; }
+    header { background-color: #000; color: #fff; padding: 1rem; text-align: center; }
+    .hero { width: 100%; height: 300px; background: url('https://via.placeholder.com/1200x300') center/cover; }
+    .catalogo { display: flex; flex-wrap: wrap; justify-content: center; padding: 2rem; gap: 1rem; }
+    .producto { width: 250px; border: 1px solid #ccc; border-radius: 10px; overflow: hidden; text-align: center; }
+    .producto img { width: 100%; }
+    .producto h3 { margin: 0.5rem 0 0; }
+    .producto p { color: #888; }
+    .btn-wsp {
+      display: inline-block; margin: 1rem auto; padding: 0.5rem 1rem;
+      background: #25D366; color: #fff; text-decoration: none; border-radius: 5px;
+    }
+    footer { text-align: center; padding: 1rem; background-color: #000; color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alicicfashion</h1>
+    <p>Moda femenina - Catálogo 2025</p>
+  </header>
+
+  <div class="hero"></div>
+
+  <section class="catalogo">
+    <div class="producto">
+      <img src="https://via.placeholder.com/250x300" alt="Producto 1">
+      <h3>Blusa Elegante</h3>
+      <p>$49.900</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20la%20blusa%20elegante">Comprar por WhatsApp</a>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/250x300" alt="Producto 2">
+      <h3>Vestido Floral</h3>
+      <p>$89.900</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20vestido%20floral">Comprar por WhatsApp</a>
+    </div>
+    <!-- Puedes duplicar estos bloques para más productos -->
+  </section>
+
+  <footer>
+    © 2025 Alicicfashion - Todos los derechos reservados
+  </footer>
+</body>
+</html>
