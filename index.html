@@ -1,112 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alicicfashion - Catálogo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Alicicfashion</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
-      color: #000;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-      margin-bottom: 0.5rem;
-    }
-    h1 {
-      margin: 0.5rem 0 0;
-    }
-    .catalogo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
-      gap: 2rem;
-    }
-    .producto {
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    .producto img {
-      width: 100%;
-      height: auto;
-    }
-    .producto h3 {
-      margin: 0.5rem 0 0;
-    }
-    .producto p {
-      color: #333;
-    }
-    .btn-wsp {
-      display: inline-block;
-      margin: 1rem auto;
-      padding: 0.5rem 1rem;
-      background: #25D366;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #000;
-      color: #fff;
-    }
+    body { font-family: sans-serif; background: #fff; color: #000; padding: 20px; }
+    header { text-align: center; }
+    .filtro, .buscador { margin: 20px 0; text-align: center; }
+    .producto { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 220px; vertical-align: top; }
+    .producto img { width: 100%; height: auto; }
+    .categoria { display: none; }
+    .btn-wsp { display: block; margin-top: 10px; background: green; color: white; padding: 10px; text-align: center; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <img src="ali cic....jpg" alt="Logo Alicicfashion" />
-    <h1>Alicicfashion</h1>
-    <p>Catálogo de prendas</p>
+    <h1>Catálogo Alicicfashion</h1>
   </header>
-  <section class="catalogo">
-    
-    <div class="producto">
-      <img src="BASICA CORAZON RIB.jpeg" alt="Básica Corazón Rib">
-      <h3>Básica Corazón Rib</h3>
-      <p>$17,000</p>
-      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20producto%20Básica%20Corazón%20Rib" target="_blank">Comprar por WhatsApp</a>
+
+  <div class="buscador">
+    <input type="text" id="buscar" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
+  </div>
+
+  <div class="filtro">
+    <button onclick="filtrarCategoria('todos')">Todos</button>
+    <button onclick="filtrarCategoria('blusa')">Blusas</button>
+    <button onclick="filtrarCategoria('short')">Shorts</button>
+    <button onclick="filtrarCategoria('conjunto')">Conjuntos</button>
+  </div>
+
+  <div id="productos">
+    <div class="producto conjunto">
+      <img src="WhatsApp Image 2025-07-11 at 12.26.53 PM.jpeg" alt="Conjunto Ali cic 1">
+      <h3>Conjunto Ali cic</h3>
+      <p>Talla: Única (S, M)</p>
+      <p>Mayor: $45.000 | Detal: $55.000</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
     </div>
-    
-    <div class="producto">
-      <img src="BLUSA ALO RIB.jpg" alt="Blusa ALO">
-      <h3>Blusa ALO</h3>
-      <p>$18,000</p>
-      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20producto%20Blusa%20ALO" target="_blank">Comprar por WhatsApp</a>
+    <div class="producto conjunto">
+      <img src="WhatsApp Image 2025-07-11 at 12.26.52 PM.jpeg" alt="Conjunto Ali cic 2">
+      <h3>Conjunto Ali cic</h3>
+      <p>Talla: Única (S, M)</p>
+      <p>Mayor: $45.000 | Detal: $55.000</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
     </div>
-    
-    <div class="producto">
-      <img src="SHORT MARA.jpeg" alt="Short MARA">
-      <h3>Short MARA</h3>
-      <p>$26,000</p>
-      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20producto%20Short%20MARA" target="_blank">Comprar por WhatsApp</a>
+    <div class="producto conjunto">
+      <img src="WhatsApp Image 2025-07-11 at 12.26.50 PM (4).jpeg" alt="Conjunto Ali cic 3">
+      <h3>Conjunto Ali cic</h3>
+      <p>Talla: Única (S, M)</p>
+      <p>Mayor: $45.000 | Detal: $55.000</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
     </div>
-    
-    <div class="producto">
-      <img src="SHORT VALENTINA.jpeg" alt="Short VALENTINA">
-      <h3>Short VALENTINA</h3>
-      <p>$27,000</p>
-      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20producto%20Short%20VALENTINA" target="_blank">Comprar por WhatsApp</a>
+    <div class="producto conjunto">
+      <img src="WhatsApp Image 2025-07-11 at 12.26.50 PM (3).jpeg" alt="Conjunto Ali cic 4">
+      <h3>Conjunto Ali cic</h3>
+      <p>Talla: Única (S, M)</p>
+      <p>Mayor: $45.000 | Detal: $55.000</p>
+      <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
     </div>
-    
-  </section>
-  <footer>
-    © 2025 Alicicfashion - Todos los derechos reservados
-  </footer>
+  </div>
+
+  <script>
+    function filtrarCategoria(cat) {
+      const productos = document.querySelectorAll('.producto');
+      productos.forEach(p => {
+        p.style.display = (cat === 'todos' || p.classList.contains(cat)) ? 'inline-block' : 'none';
+      });
+    }
+
+    function filtrarProductos() {
+      const texto = document.getElementById('buscar').value.toLowerCase();
+      const productos = document.querySelectorAll('.producto');
+      productos.forEach(p => {
+        const nombre = p.querySelector('h3').textContent.toLowerCase();
+        p.style.display = nombre.includes(texto) ? 'inline-block' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
