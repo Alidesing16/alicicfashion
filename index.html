@@ -133,6 +133,33 @@
     transform: translateX(-100%);
   }
 }
+    .img-hover {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-hover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-hover .img-espalda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.img-hover:hover .img-espalda {
+  opacity: 1;
+}
+
+.img-hover:hover .img-frente {
+  opacity: 0;
+}
 
   </style>
 </head>
