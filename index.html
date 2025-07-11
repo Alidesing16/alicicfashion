@@ -7,18 +7,6 @@
   <title>Alicicfashion - Catálogo</title>
   <style>
 
-<div class="buscador">
-    <input type="text" id="buscar" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
-  </div>
-
-  <div class="filtro">
-    <button onclick="filtrarCategoria('todos')">Todos</button>
-    <button onclick="filtrarCategoria('blusa')">Blusas</button>
-    <button onclick="filtrarCategoria('short')">Shorts</button>
-    <button onclick="filtrarCategoria('conjunto')">Conjuntos</button>
-  </div>
-
-
     body {
       font-family: 'Arial', sans-serif;
       background-color: #fff;
@@ -79,6 +67,20 @@
       background-color: #000;
       color: #fff;
     }
+
+<div class="buscador">
+    <input type="text" id="buscar" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
+  </div>
+
+  <div class="filtro">
+    <button onclick="filtrarCategoria('todos')">Todos</button>
+    <button onclick="filtrarCategoria('blusa')">Blusas</button>
+    <button onclick="filtrarCategoria('short')">Shorts</button>
+    <button onclick="filtrarCategoria('conjunto')">Conjuntos</button>
+  </div>
+
+
+    
   </style>
 </head>
 <body>
