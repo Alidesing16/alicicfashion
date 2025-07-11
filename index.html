@@ -1,319 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alicicfashion - Catálogo</title>
-  <LINK REL="ICON" href="ali cic....jpg">
-  <style>
-
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fff;
-      margin: 0;
-      padding: 0;
-      color: #000;
-    }
-    header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    header img {
-      max-height: 80px;
-      margin-bottom: 0.5rem;
-    }
-    h1 {
-      margin: 0.5rem 0 0;
-    }
-    .catalogo {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 2rem;
-      gap: 2rem;
-    }
-    .producto {
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      overflow: hidden;
-      text-align: center;
-      background-color: #f9f9f9;
-    }
-    .producto img {
-      width: 100%;
-      height: auto;
-    }
-    .producto h3 {
-      margin: 0.5rem 0 0;
-    }
-    .producto p {
-      color: #333;
-    }
-    .btn-wsp {
-      display: inline-block;
-      margin: 1rem auto;
-      padding: 0.5rem 1rem;
-      background: #25D366;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #000;
-      color: #fff;
-    }
-
-    .fullscreen-carousel {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.carousel-track {
-  display: flex;
-  width: 300vw; /* 3 imágenes */
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-track img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
-
-    .info-bar {
-  width: 100%;
-  background-color: black;
-  color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  position: fixed; /* Puedes cambiar a 'relative' si no quieres que esté fija */
-  top: 0;           /* O usa bottom: 0; para que esté abajo */
-  z-index: 9999;
-  font-size: 1rem;
-  padding: 10px 0;
-}
-
-.info-text {
-  display: inline-block;
-  padding-left: 100%;
-  animation: scroll-left 20s linear infinite;
-}
-
-@keyframes scroll-left {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-    .img-hover {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.img-hover img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.img-hover .img-espalda {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.img-hover:hover .img-espalda {
-  opacity: 1;
-}
-
-.img-hover:hover .img-frente {
-  opacity: 0;
-}
-    .wsp-flotante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  background-color: white;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-
-.wsp-flotante:hover {
-  transform: scale(1.1);
-}
-
-.wsp-flotante img {
-  width: 50px;
-  height: 50px;
-}
-
-
-    .social-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem 0;
-}
-
-.social-footer p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.1);
-}
-
-.social-icons img {
-  width: 40px;
-  height: 40px;
-}
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-  
 <body>
-<a href="https://wa.me/573153535066" class="wsp-flotante" target="_blank" title="Chatea con nosotros">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-</a>
 
+  <!-- Carrusel a pantalla completa -->
+  <div class="fullscreen-carousel">
+    <div class="carousel-track">
+      <img src="img1.jpeg" alt="Conjunto Ali cic 1">
+      <img src="img2.jpeg" alt="Conjunto Ali cic 2">
+      <img src="img3.jpeg" alt="Conjunto Ali cic 3">
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
 
-  
+  <!-- Barra informativa -->
   <div class="info-bar">
-  <div class="info-text">
-    💥 Promoción del mes: Envíos GRATIS por compras desde $100.000 💥 | 🛍️ Escríbenos al WhatsApp 3153535066 | 👗 Nuevas colecciones cada semana |
+    <div class="info-text">
+      💥 Promoción del mes: Envíos GRATIS por compras desde $100.000 💥 | 🛍️ Escríbenos al WhatsApp 3153535066 | 👗 Nuevas colecciones cada semana |
+    </div>
   </div>
-</div>
-  <br>
-  <header>
-    <img src="ali cic.png" alt="Logo Alicicfashion" />
-    <h1>ALI CIC FASHION</h1>
-    <p>Catálogo de prendas</p>
 
-  <div class="filtro">
-    <button onclick="filtrarCategoria('todos')">Todos</button>
-    <button onclick="filtrarCategoria('blusa')">Blusas</button>
-    <button onclick="filtrarCategoria('short')">Shorts</button>
-    <button onclick="filtrarCategoria('conjunto')">Conjuntos</button>
-  </div>
-  </header>
-
-<div class="fullscreen-carousel">
-  <div class="carousel-track">
-    <img src="BASICA CORAZON RIB.jpeg" alt="Imagen 1">
-    <img src="BLUSA ALO RIB.jpg" alt="Imagen 2">
-    <img src="SHORT MARA.jpeg" alt="Imagen 3">
-  </div>
-  <button class="carousel-btn prev">&#10094;</button>
-  <button class="carousel-btn next">&#10095;</button>
-</div>
-
-  
-  <section class="catalogo">
-
-    
-     <div class="producto">
-  <div class="img-hover">
-      <img src="WhatsApp Image 2025-07-11 at 12.26.50 PM (4).jpeg" class="img-frente" alt="Frente">
-    <img src="WhatsApp Image 2025-07-11 at 12.26.53 PM.jpeg" class="img-espalda" alt="Espalda">
-      <h3> CONJUNTO ALI CIC </h3>
-       <p> costa de 2 prendas </p>
+  <!-- Producto -->
+  <div id="productos">
+    <div class="producto conjunto">
+      <div class="img-hover">
+        <img src="img3.jpeg" class="img-frente">
+        <img src="img4.jpeg" class="img-espalda">
+      </div>
+      <h3>Conjunto Ali cic</h3>
       <p>Talla: Única (S, M)</p>
-      <p> al Mayor: $45.000 </p>
-      <p> al Detal: $55.000 </p>
+      <p>Mayor: $45.000 | Detal: $55.000</p>
       <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
     </div>
-
-
-    </a>
   </div>
-</footer>
 
-<div style="text-align: center; margin-top: 30px;">
-  <h4>¡SÍGUENOS!</h4>
-  <a href="https://www.facebook.com/tu_pagina" target="_blank" style="margin: 0 10px; color: black;">
-    <i class="fab fa-facebook fa-2x"></i>
+  <!-- Logo WhatsApp flotante -->
+  <a href="https://wa.me/573153535066" class="wsp-flotante" target="_blank" title="Chatea con nosotros">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
   </a>
-  <a href="https://www.instagram.com/alicicfashion/" target="_blank" style="margin: 0 10px; color: black;">
-    <i class="fab fa-instagram fa-2x"></i>
-  </a>
-  <a href="https://www.tiktok.com/@tu_usuario" target="_blank" style="margin: 0 10px; color: black;">
-    <i class="fab fa-tiktok fa-2x"></i>
-  </a>
-    
-       
-  </section>
-  <footer>
-    © 2025 Alicicfashion - Todos los derechos reservados
+
+  <!-- Footer con redes sociales -->
+  <footer class="social-footer">
+    <p>¡Sígueme!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Alicicfashion" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/alicicfashion/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@alicicfashion?lang=en" target="_blank" title="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+    </div>
   </footer>
-</body>
 
   <script>
-  const track = document.querySelector('.carousel-track');
-  const totalSlides = track.children.length;
-  let slideIndex = 0;
+    const track = document.querySelector('.carousel-track');
+    const totalSlides = track.children.length;
+    let slideIndex = 0;
 
-  document.querySelector('.next').onclick = () => {
-    slideIndex = (slideIndex + 1) % totalSlides;
-    updateSlide();
-  };
+    document.querySelector('.next').onclick = () => {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      updateSlide();
+    };
+    document.querySelector('.prev').onclick = () => {
+      slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+      updateSlide();
+    };
 
-  document.querySelector('.prev').onclick = () => {
-    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-    updateSlide();
-  };
+    function updateSlide() {
+      track.style.transform = `translateX(-${slideIndex * 100}vw)`;
+    }
 
-  function updateSlide() {
-    track.style.transform = `translateX(-${slideIndex * 100}vw)`;
-  }
+    setInterval(() => {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      updateSlide();
+    }, 5000);
+  </script>
 
-  // Opcional: autoplay
-  setInterval(() => {
-    slideIndex = (slideIndex + 1) % totalSlides;
-    updateSlide();
-  }, 5000); // cada 5 segundos
-</script>
+</body>
 </html>
