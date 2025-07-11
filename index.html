@@ -69,40 +69,42 @@
       color: #fff;
     }
 
-    .carousel {
+    .fullscreen-carousel {
   position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 2rem auto;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  border-radius: 12px;
 }
 
-.carousel-images {
+.carousel-track {
   display: flex;
+  width: 300vw; /* 3 imágenes */
+  height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-images img {
-  width: 100%;
+.carousel-track img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
-.prev, .next {
+.carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0,0,0,0.5);
   border: none;
+  color: white;
+  font-size: 2rem;
   padding: 1rem;
   cursor: pointer;
-  font-size: 2rem;
-  z-index: 10;
+  z-index: 1000;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
 
   </style>
 </head>
@@ -111,9 +113,6 @@
     <img src="ali cic....jpg" alt="Logo Alicicfashion" />
     <h1>ALI CIC FASHION</h1>
     <p>Catálogo de prendas</p>
-    <div class="buscador">
-    <input type="text" id="buscar" placeholder="Buscar producto..." onkeyup="filtrarProductos()">
-  </div>
 
   <div class="filtro">
     <button onclick="filtrarCategoria('todos')">Todos</button>
@@ -123,14 +122,14 @@
   </div>
   </header>
 
-<div class="carousel">
-  <div class="carousel-images">
-    <img src="BASICA CORAZON RIB.jpeg" alt="Producto 1">
-    <img src="BLUSA ALO RIB.jpg" alt="Producto 2">
-    <img src="SHORT VALENTINA.jpeg" alt="Producto 3">
+<div class="fullscreen-carousel">
+  <div class="carousel-track">
+    <img src="BASICA CORAZON RIB.jpg" alt="Imagen 1">
+    <img src="BLUSA ALO RIB.jpg" alt="Imagen 2">
+    <img src="SHORT MARA.jpg" alt="Imagen 3">
   </div>
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
+  <button class="carousel-btn prev">&#10094;</button>
+  <button class="carousel-btn next">&#10095;</button>
 </div>
 
   
@@ -141,7 +140,7 @@
     <div class="producto conjunto">
       <img src="WhatsApp Image 2025-07-11 at 12.26.53 PM.jpeg" alt="Conjunto Ali cic 1">
       <h3> CONJUNTO ALI CIC </h3>
-       <p> conta de 2 prendas ( falda y blusa ) </p>
+       <p> costa de 2 prendas </p>
       <p>Talla: Única (S, M)</p>
       <p> |al Mayor: $45.000 </p>
       <p> |al Detal: $55.000 </p>
@@ -155,22 +154,28 @@
 </body>
 
   <script>
-  const images = document.querySelector('.carousel-images');
-  const total = images.children.length;
-  let index = 0;
+  const track = document.querySelector('.carousel-track');
+  const totalSlides = track.children.length;
+  let slideIndex = 0;
 
   document.querySelector('.next').onclick = () => {
-    index = (index + 1) % total;
-    updateCarousel();
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlide();
   };
 
   document.querySelector('.prev').onclick = () => {
-    index = (index - 1 + total) % total;
-    updateCarousel();
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
   };
 
-  function updateCarousel() {
-    images.style.transform = `translateX(-${index * 100}%)`;
+  function updateSlide() {
+    track.style.transform = `translateX(-${slideIndex * 100}vw)`;
   }
+
+  // Opcional: autoplay
+  setInterval(() => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    updateSlide();
+  }, 5000); // cada 5 segundos
 </script>
 </html>
