@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+.info-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.info-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+main.nosotros-contenido {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h2, main h3 {
+  color: #C2185B;
+  margin-bottom: 0.5rem;
+}
+
+.historia p,
+.mision-vision p,
+.valores ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mision-vision {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.mision-vision div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.valores li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.valores li::before {
+  content: "✔";
+  color: #C2185B;
+  position: absolute;
+  left: 0;
+}
+
+.social-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.social-footer p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+footer:last-of-type {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
