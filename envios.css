@@ -74,10 +74,12 @@ header img {
   color: #C2185B;
 }
 
-main.envios-contenido {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
+main.envios-contenido ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+  display: inline-block;
+  text-align: left; /* mantiene el texto alineado a la izquierda dentro del bloque */
 }
 
 main h2 {
