@@ -3,196 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Catálogo - Ali Cic Fashion</title>
+  <title>Ali Cic Fashion - Catálogo</title>
   <link rel="stylesheet" href="catalogo.css" />
-  <link rel="Icon" href="ali cic....jpg">
+  <link rel="icon" href="ali cic....jpg" />
 </head>
-
-
 <body>
 
-<!-- Barra informativa -->
   <div class="info-bar">
     <div class="info-text">
       💥 Promoción del mes: Envíos GRATIS por compras desde $500.000 💥 | 🛍️ Escríbenos al WhatsApp 3153535066 | 👗 Nuevas colecciones cada semana |
     </div>
   </div>
-  
-<!--- titulo --->
-<header>
-  <img src="ali cic.png" alt="Conjunto Ali cic 2" width="80" height="80" >
+
+  <nav class="menu-nav">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+      <li><a href="envios.html">Envíos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="ali cic.png" alt="Logo Ali Cic" width="80" height="80">
     <h1>ALI CIC FASHION</h1>
-    <p> Moda femenina - Catálogo 2025</p>
-  
-  <!--------------------------------------------PRODUCTOS --------------------------------->
-  <section class="catalogo-grid">
-    <div id="blusas">
-      <h2>Blusas</h2>
-      <div class="producto">
-        <img src="blusa1.jpeg" alt="blusa 1">
-        <h3>Blusa 1</h3>
-         <p>Talla: Única (S, M)</p>
-            <p>Al mayor:$45.000</p>
-              <p>Al detal:$55.000</p>
-               <p>Precio V.I.P :$43.000</p>
-        <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
-        <a class="boton-moderno" data-nombre="Blusa elegante" data-precio="50000">Agregar al carrito</a>
+    <p>Catálogo Completo 2025</p>
+  </header>
+
+  <main class="catalogo-contenido">
+    <section class="categoria">
+      <h2 class="categoria-titulo">Conjuntos</h2>
+      <div class="categoria-grid">
+        <div class="producto">
+          <img src="cj1.jpeg" alt="Conjunto fucsia" />
+          <h3>Conjunto fucsia</h3>
+          <p><strong>Talla:</strong> Única (S, M)</p>
+          <p><strong>Mayorista:</strong> $45.000</p>
+          <p><strong>Detal:</strong> $55.000</p>
+          <p><strong>Precio V.I.P:</strong> $50.000</p>
+          <a href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20conjunto%20fucsia" class="boton-moderno">Comprar por WhatsApp</a>
+        </div>
+        <div class="producto">
+          <img src="cj3.jpeg" alt="Conjunto negro" />
+          <h3>Conjunto negro</h3>
+          <p><strong>Talla:</strong> Única (S, M)</p>
+          <p><strong>Mayorista:</strong> $45.000</p>
+          <p><strong>Detal:</strong> $55.000</p>
+          <p><strong>Precio V.I.P:</strong> $50.000</p>
+          <a href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20conjunto%20negro" class="boton-moderno">Comprar por WhatsApp</a>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="social-footer">
+    <p>¡Síguenos!</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Alicicfashion" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/alicicfashion/" target="_blank" title="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@alicicfashion?lang=en" target="_blank" title="TikTok">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
     </div>
-    <!-- Puedes repetir bloques como este para cada categoría -->
-  </section>
-
-
-<section class="catalogo-grid">
-    <div id="blusas">
-      <h2>CORSELES</h2>
-      <div class="producto">
-        <img src="blusa1.jpeg" alt="blusa 1">
-        <h3>Blusa 1</h3>
-         <p>Talla: Única (S, M)</p>
-            <p>Al mayor:$45.000</p>
-              <p>Al detal:$55.000</p>
-               <p>Precio V.I.P :$43.000</p>
-        <a class="btn-wsp" href="https://wa.me/573153535066?text=Hola%20quiero%20comprar%20el%20Conjunto%20Ali%20cic">Comprar por WhatsApp</a>
-        <a class="boton-moderno" data-nombre="Blusa elegante" data-precio="50000">Agregar al carrito</a>
-      </div>
-    </div>
-    <!-- Puedes repetir bloques como este para cada categoría -->
-  </section>
-
-  
-  <h2>Faldas</h2>
-  <div class="producto">
-    <img src="img/falda1.jpg" alt="Falda plisada">
-    <h3>Falda plisada</h3>
-    <p>$54.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Falda Short</h2>
-  <div class="producto">
-    <img src="img/falda-short1.jpg" alt="Falda short moderna">
-    <h3>Falda short moderna</h3>
-    <p>$64.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Short</h2>
-  <div class="producto">
-    <img src="img/short1.jpg" alt="Short casual">
-    <h3>Short casual</h3>
-    <p>$49.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Pantalón</h2>
-  <div class="producto">
-    <img src="img/pantalon1.jpg" alt="Pantalón formal">
-    <h3>Pantalón formal</h3>
-    <p>$89.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Vestidos</h2>
-  <div class="producto">
-    <img src="img/vestido1.jpg" alt="Vestido largo">
-    <h3>Vestido largo</h3>
-    <p>$109.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Enterizo</h2>
-  <div class="producto">
-    <img src="img/enterizo1.jpg" alt="Enterizo moderno">
-    <h3>Enterizo moderno</h3>
-    <p>$99.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Lencería</h2>
-  <div class="producto">
-    <img src="img/lenceria1.jpg" alt="Lencería delicada">
-    <h3>Lencería delicada</h3>
-    <p>$39.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-
-  <h2>Pijamas</h2>
-  <div class="producto">
-    <img src="img/pijama1.jpg" alt="Pijama cómoda">
-    <h3>Pijama cómoda</h3>
-    <p>$44.900</p>
-    <a href="#" class="boton-moderno">Ver más</a>
-  </div>
-</div>
-
-
-
-  <div style="text-align: center; margin: 30px 0;">
-    <a href="https://bit.ly/ALICIC_FASHION" class="boton-pdf" target="_blank">Más productos en nuestro catálogo PDF</a>
-  </div>
-
-
-
-
-
-
-
-  
-  
-  <div class="vista-previa-carrito">
-    <h3>Carrito de compras</h3>
-    <ul class="lista-carrito" id="carrito-lista"></ul>
-    <p id="carrito-total">Total: $<span id="total">0</span></p>
-  </div>
-
-  <footer>
-    © 2025 ALIRIO avendaño . Todos los derechos reservados.
   </footer>
 
-  <script>
-    const botonesAgregar = document.querySelectorAll('.boton-moderno');
-    const carritoLista = document.getElementById('carrito-lista');
-    const totalCarrito = document.getElementById('total');
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  <footer>
+    © 2025 Alirio Avendaño - Todos los derechos reservados
+  </footer>
 
-    function actualizarCarrito() {
-      carritoLista.innerHTML = '';
-      let total = 0;
-
-      carrito.forEach((producto, index) => {
-        total += producto.precio;
-        const li = document.createElement('li');
-        li.innerHTML = \`\${producto.nombre} - $\${producto.precio.toLocaleString()} 
-          <button class="eliminar-producto" data-index="\${index}">✖</button>\`;
-        carritoLista.appendChild(li);
-      });
-
-      totalCarrito.textContent = total.toLocaleString();
-      localStorage.setItem('carrito', JSON.stringify(carrito));
-      activarBotonesEliminar();
-    }
-
-    function activarBotonesEliminar() {
-      document.querySelectorAll('.eliminar-producto').forEach(btn => {
-        btn.onclick = () => {
-          const index = btn.getAttribute('data-index');
-          carrito.splice(index, 1);
-          actualizarCarrito();
-        };
-      });
-    }
-
-    botonesAgregar.forEach(boton => {
-      boton.addEventListener('click', () => {
-        const nombre = boton.getAttribute('data-nombre');
-        const precio = parseFloat(boton.getAttribute('data-precio'));
-        carrito.push({ nombre, precio });
-        actualizarCarrito();
-      });
-    });
-
-    actualizarCarrito();
-  </script>
 </body>
 </html>
