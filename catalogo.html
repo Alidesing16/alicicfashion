@@ -256,6 +256,23 @@
   <footer>
     © 2025 Alirio Avendaño - Todos los derechos reservados
   </footer>
+    <!-- carrito -->
+<script>
+  let carrito = [];
 
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    alert(`${nombre} agregado al carrito`);
+    actualizarCarritoUI();
+  }
+
+  function actualizarCarritoUI() {
+    const carritoContenedor = document.getElementById('carrito-items');
+    carritoContenedor.innerHTML = '';
+    carrito.forEach((item, index) => {
+      carritoContenedor.innerHTML += `<li>${item.nombre} - $${item.precio.toLocaleString()}</li>`;
+    });
+  }
+</script>
 </body>
 </html>
