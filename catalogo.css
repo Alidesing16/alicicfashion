@@ -277,43 +277,6 @@ footer:last-of-type {
 /* nuevo codigo */
 
 
-
-.producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin-bottom: 40px;
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.producto:hover {
-  transform: translateY(-5px);
-}
-
-.producto img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.producto h3 {
-  margin: 15px 0 5px;
-  font-size: 1rem;
-  color: #000;
-}
-
-.producto p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-}
-
 .boton-moderno {
   display: inline-block;
   margin-top: 10px;
