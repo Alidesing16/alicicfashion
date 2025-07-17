@@ -46,7 +46,7 @@ main.nosotros-contenido {
 }
 
 main h2, main h3 {
-  color: #C2185B;
+  color: #4209e0;
   margin-bottom: 0.5rem;
 }
 
@@ -84,7 +84,7 @@ main h2, main h3 {
 
 .valores li::before {
   content: "✔";
-  color: #C2185B;
+  color: #4209e0;
   position: absolute;
   left: 0;
 }
