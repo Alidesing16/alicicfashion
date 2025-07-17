@@ -46,7 +46,7 @@ main.nosotros-contenido {
 }
 
 main h2, main h3 {
-  color: #4209e0;
+  color: #000; /* negro */
   margin-bottom: 0.5rem;
 }
 
