@@ -79,28 +79,33 @@ main.envios-contenido ul {
   padding: 0;
   margin: 1rem auto;
   display: inline-block;
+  text-align: center;
   text-align: left; /* mantiene el texto alineado a la izquierda dentro del bloque */
 }
 
 main h2 {
   color: #000; /* negro */
   margin-top: 2rem;
+  text-align: center;
 }
 
 main p, main ul {
   font-size: 1rem;
   line-height: 1.6;
+  text-align: center;
 }
 
 main ul {
   list-style: none;
   padding: 0;
+  text-align: center;
 }
 
 main ul li::before {
   content: "✔ ";
   color: #2104c4;
   margin-right: 0.5rem;
+  text-align: center;
 }
 
 .boton-moderno {
