@@ -277,63 +277,6 @@ footer:last-of-type {
 /* nuevo codigo */
 
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  color: #000;
-}
-
-header {
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #000;
-}
-
-.menu-categorias {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.menu-categorias a {
-  padding: 8px 15px;
-  border: 1px solid #000;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #000;
-  font-size: 0.9rem;
-  transition: background 0.3s, color 0.3s;
-}
-
-.menu-categorias a:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.catalogo-grid {
-  max-width: 1300px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.catalogo-grid h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #000;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
 
 .producto {
   display: flex;
