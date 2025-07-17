@@ -202,3 +202,27 @@ footer:last-of-type {
   width: 60px;
   height: auto;
 }
+/* BOTONES */
+
+.boton-moderno {
+  display: inline-block;
+  background: linear-gradient(135deg, #e91e63, #f06292);
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  margin: 1rem auto;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.boton-moderno:hover {
+  background: linear-gradient(135deg, #c2185b, #ec407a);
+  box-shadow: 0 6px 18px rgba(233, 30, 99, 0.6);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
