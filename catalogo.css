@@ -155,6 +155,29 @@ header img {
   transform: translateY(-2px);
 }
 
+
+.btn-wsp {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #25D366;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.wsp-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.wsp-flotante img {
+  width: 60px;
+  height: auto;
+}
+
 .social-footer {
   background: #000;
   color: #fff;
@@ -189,27 +212,4 @@ footer:last-of-type {
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
-
-
-.btn-wsp {
-  display: inline-block;
-  margin-top: 0.5rem;
-  background: #25D366;
-  color: #fff;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.wsp-flotante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-}
-
-.wsp-flotante img {
-  width: 60px;
-  height: auto;
 }
