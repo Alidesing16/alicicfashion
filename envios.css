@@ -239,3 +239,24 @@ main.envios-contenido ul {
 .whatsapp-float img:hover {
   transform: scale(1.1);
 }
+
+
+
+
+.boton-dudas {
+  display: inline-block;
+  background-color: #c2185b;
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 15px;
+}
+
+.boton-dudas:hover {
+  background-color: #a0154d;
+  color: #fff;
+}
