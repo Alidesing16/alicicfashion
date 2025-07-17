@@ -71,7 +71,7 @@ header img {
 
 .menu-nav a:hover,
 .menu-nav a.activo {
-  color: #0c10fa;
+  color: #2104c4;
 }
 
 main.envios-contenido ul {
@@ -83,7 +83,7 @@ main.envios-contenido ul {
 }
 
 main h2 {
-  color: #C2185B;
+  color: #2104c4;
   margin-top: 2rem;
 }
 
@@ -99,7 +99,7 @@ main ul {
 
 main ul li::before {
   content: "✔ ";
-  color: #e91e63;
+  color: #2104c4;
   margin-right: 0.5rem;
 }
 
