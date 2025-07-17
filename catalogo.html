@@ -291,21 +291,39 @@
   </footer>
     <!-- carrito -->
 <script>
-  let carrito = [];
+ <div id="carrito" class="vista-previa-carrito">
+    <h3>🛒 Mi Carrito</h3>
+    <ul id="carrito-items"></ul>
+    <p id="carrito-total"><strong>Total:</strong> $0</p>
+  </div>
 
-  function agregarAlCarrito(nombre, precio) {
-    carrito.push({ nombre, precio });
-    alert(`${nombre} agregado al carrito`);
-    actualizarCarritoUI();
-  }
+  <footer>
+    <p>© 2025 Ali Cic Fashion</p>
+  </footer>
 
-  function actualizarCarritoUI() {
-    const carritoContenedor = document.getElementById('carrito-items');
-    carritoContenedor.innerHTML = '';
-    carrito.forEach((item, index) => {
-      carritoContenedor.innerHTML += `<li>${item.nombre} - $${item.precio.toLocaleString()}</li>`;
-    });
-  }
-</script>
+  <script>
+    let carrito = [];
+
+    function agregarAlCarrito(nombre, precio) {
+      carrito.push({ nombre, precio });
+      alert(`${nombre} agregado al carrito`);
+      actualizarCarritoUI();
+    }
+
+    function actualizarCarritoUI() {
+      const carritoContenedor = document.getElementById('carrito-items');
+      const totalContenedor = document.getElementById('carrito-total');
+      carritoContenedor.innerHTML = '';
+      let total = 0;
+
+      carrito.forEach(item => {
+        carritoContenedor.innerHTML += `<li>${item.nombre} - $${item.precio.toLocaleString()}</li>`;
+        total += item.precio;
+      });
+
+      totalContenedor.innerHTML = `<strong>Total:</strong> $${total.toLocaleString()}`;
+    }
+  </script>
+
 </body>
 </html>
