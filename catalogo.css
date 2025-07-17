@@ -74,53 +74,119 @@ header img {
   color: #C2185B;
 }
 
-.catalogo-contenido {
-  max-width: 1100px;
-  margin: 2rem auto;
-  padding: 1rem;
-  text-align: center;
-}
-
-.catalogo-contenido h2 {
-  font-size: 2rem;
-  color: #000;
-  margin-bottom: 2rem;
-}
-
 .catalogo-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.catalogo-grid h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
 .producto {
-  width: 250px;
-  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
   border-radius: 10px;
-  overflow: hidden;
-  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
   text-align: center;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
 }
 
 .producto img {
   width: 100%;
+  max-width: 300px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .producto h3 {
-  margin-top: 1rem;
-  font-size: 1.1rem;
+  margin: 15px 0 5px;
+  font-size: 1rem;
   color: #000;
 }
 
 .producto p {
-  font-size: 0.95rem;
-  color: #555;
-  margin: 0.3rem 0;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.boton-moderno {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.boton-moderno:hover {
+  background-color: #444;
+}
+
+.vista-previa-carrito {
+  position: fixed;
+  right: 0;
+  top: 100px;
+  width: 280px;
+  background-color: #fff;
+  border-left: 1px solid #eee;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.05);
+}
+
+.lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.eliminar-producto {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.boton-pdf {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.boton-pdf:hover {
+  background-color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #666;
 }
 
 .boton-moderno {
