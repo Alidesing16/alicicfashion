@@ -127,3 +127,18 @@ footer {
   background-color: #fff;
   color: #666;
 }
+
+<!------------------------------------------- etiqueta --------------------------------->
+.etiqueta {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #ff3366;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 10;
+}
