@@ -388,6 +388,24 @@ h1 {
   background-color: #444;
 }
 
+.boton-pdf {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.boton-pdf:hover {
+  background-color: #444;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -396,3 +414,4 @@ footer {
   background-color: #fff;
   color: #666;
 }
+
