@@ -176,3 +176,38 @@ main.envios-contenido ul {
   display: inline-block;
   text-align: left; /* mantiene el texto alineado a la izquierda dentro del bloque */
 }
+
+.menu-nav {
+  background-color: #111;
+  padding: 0.5rem 1rem;
+  margin-top: 50px;
+  position: sticky;
+  top: 30px;
+  z-index: 998;
+}
+
+.menu-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-nav li {
+  margin: 0 15px;
+}
+
+.menu-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-nav a:hover,
+.menu-nav a.activo {
+  color: #C2185B;
+}
