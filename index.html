@@ -10,7 +10,8 @@
 
   <!-- INICIO -->
   <body>
-
+<!-- Botón para ir arriba -->
+<button id="btnSubir" title="Volver arriba">⬆</button>
 
   <!-- Barra informativa -->
   <div class="info-bar">
@@ -236,5 +237,21 @@
 <footer>
     © 2025 Alirio Avendaño - Todos los derechos reservados
   </footer>
+    <script>
+  // Mostrar el botón al hacer scroll
+  window.onscroll = function () {
+    const btn = document.getElementById("btnSubir");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Función para subir al principio
+  document.getElementById("btnSubir").onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
 </body>
 </html>
