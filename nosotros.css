@@ -249,3 +249,35 @@ footer:last-of-type {
   color: #333;
   line-height: 1.5;
 }
+
+
+<!-- boton de opinion de google -->
+
+.boton-opinion-google {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.boton-opinion-google a {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.boton-opinion-google a:hover {
+  background-color: #e0e0e0;
+}
+
+.boton-opinion-google img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
