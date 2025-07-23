@@ -216,3 +216,30 @@ footer:last-of-type {
 .menu-nav a.activo {
   color: #C2185B;
 }
+
+
+
+
+.dueno {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.foto-dueno {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.dueno h3 {
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.dueno p {
+  font-size: 16px;
+  color: #333;
+}
