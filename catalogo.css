@@ -213,3 +213,34 @@ footer:last-of-type {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+
+
+
+.boton-opinion-google {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.boton-opinion-google a {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.boton-opinion-google a:hover {
+  background-color: #e0e0e0;
+}
+
+.boton-opinion-google img {
+  width: 24px;
+  height: 24px;
+}
