@@ -378,3 +378,50 @@ body {
 .tabla-productos tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+
+
+
+.formas-pago {
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.formas-pago h2 {
+  color: #e91e63;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.metodos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.metodo {
+  width: 180px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.metodo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.metodo p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+.metodo:hover {
+  transform: scale(1.05);
+}
