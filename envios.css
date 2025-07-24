@@ -262,23 +262,28 @@ main.envios-contenido ul {
 }
 
 
+
+
+
 .boton-catalogo {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .boton-catalogo a {
-  background-color: #e91e63; /* Rosado fuerte */
-  color: white;
-  padding: 12px 25px;
+  background-color: white;
+  color: #e91e63; /* Rosado fuerte */
+  padding: 12px 30px;
+  border: 2px solid #e91e63;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 .boton-catalogo a:hover {
-  background-color: #c2185b; /* Rosado más oscuro al pasar el mouse */
+  background-color: #e91e63;
+  color: white;
 }
