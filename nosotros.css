@@ -281,3 +281,25 @@ footer:last-of-type {
   height: 18px;
   vertical-align: middle;
 }
+
+
+.boton-catalogo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.boton-catalogo a {
+  background-color: #e91e63; /* Rosado fuerte */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.boton-catalogo a:hover {
+  background-color: #c2185b; /* Rosado más oscuro al pasar el mouse */
+}
