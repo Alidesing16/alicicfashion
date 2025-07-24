@@ -36,7 +36,7 @@ body {
 
 .carousel-track img {
   width: 100vw;
-  height: 150vh;
+  height: 80vh;
   object-fit: cover;
 }
 
