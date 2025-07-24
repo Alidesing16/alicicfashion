@@ -349,6 +349,7 @@ body {
 
 
 <------  CSS TABLA -------->
+
 .tabla-container {
   padding: 20px;
   overflow-x: auto;
@@ -356,15 +357,17 @@ body {
 
 .tabla-productos {
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
   border-collapse: collapse;
-  margin-top: 20px;
   font-size: 0.95rem;
   text-align: center;
 }
 
-.tabla-productos th, .tabla-productos td {
+.tabla-productos th,
+.tabla-productos td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
 }
 
 .tabla-productos thead {
@@ -372,6 +375,6 @@ body {
   color: #fff;
 }
 
-.tabla-productos tbody tr:hover {
-  background-color: #f0f0f0;
+.tabla-productos tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
