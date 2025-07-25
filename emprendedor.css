@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.hero {
+  background-color: #e91e63;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.beneficios {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.beneficios h2 {
+  color: #e91e63;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.beneficio {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.beneficio h3 {
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.cta {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.cta h2 {
+  font-size: 26px;
+  color: #e91e63;
+}
+
+.cta p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #e91e63;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+}
