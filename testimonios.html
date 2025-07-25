@@ -95,5 +95,31 @@
     © 2025 Ali Cic Fashion - Todos los derechos reservados
   </footer>
 
+<script>
+  const testimonials = document.querySelectorAll(".testimonial");
+  const dots = document.querySelectorAll(".dot");
+  let current = 0;
+
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove("active"));
+    dots.forEach(d => d.classList.remove("active"));
+    testimonials[index].classList.add("active");
+    dots[index].classList.add("active");
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      current = i;
+      showTestimonial(current);
+    });
+  });
+
+  setInterval(() => {
+    current = (current + 1) % testimonials.length;
+    showTestimonial(current);
+  }, 5000);
+</script>
+
+
 </body>
 </html>
