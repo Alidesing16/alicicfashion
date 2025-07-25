@@ -287,3 +287,41 @@ main.envios-contenido ul {
   background-color: #e91e63;
   color: white;
 }
+
+
+
+
+
+
+.faq {
+  background-color: #fff0f5;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.faq h2 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+.faq-item h3 {
+  color: #222;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
