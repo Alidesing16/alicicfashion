@@ -184,3 +184,72 @@ footer {
 .btn-volver:hover {
   background-color: #c2185b;
 }
+
+
+
+
+
+.carrusel-testimonios {
+  background: #fef0f4;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+  color: #c2185b;
+}
+
+.testimonial .ocupacion {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonials-nav {
+  margin-top: 30px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #e91e63;
+}
