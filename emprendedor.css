@@ -209,3 +209,17 @@ footer {
 .menu-nav a.activo {
   color: #C2185B;
 }
+
+
+
+
+.lista-categorias {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: left;
+  color: #333;
+}
