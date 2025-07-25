@@ -75,3 +75,54 @@ body {
 .btn:hover {
   background-color: #c2185b;
 }
+
+.contenedor-tres-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.columna {
+  flex: 1 1 300px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 350px;
+}
+
+.columna h2 {
+  color: #e91e63;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.columna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.columna ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.columna table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.columna table th,
+.columna table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.columna table th {
+  background-color: #f9dbe7;
+  color: #333;
+}
