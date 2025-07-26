@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
-  color: #ffffff;
+  color: white; /* texto en blanco */
 }
 
 .hero {
