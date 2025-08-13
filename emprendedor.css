@@ -20,7 +20,7 @@ body {
 
 .hero p {
   font-size: 18px;
-  color: white; /* <-- por si se sobreescribe por otro estilo */
+  color: black; /* <-- por si se sobreescribe por otro estilo */
 }
 
 .beneficios {
