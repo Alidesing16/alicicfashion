@@ -2,8 +2,9 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
-  color: white; /* texto en blanco */
+  color: #000000; /* texto NEGRO , legible sobre fondo blanco */
 }
+
 
 .hero {
   background-color: #e91e63;
