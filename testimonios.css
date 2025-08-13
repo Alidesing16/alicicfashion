@@ -2,7 +2,8 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #ffffff;
-  color: #000000; /* texto NEGRO , legible sobre fondo blanco */
+  color: #333; /* color de texto legible */
+  text-align: center; /* centra el texto por defecto */
 }
 
 
