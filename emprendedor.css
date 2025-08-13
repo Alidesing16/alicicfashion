@@ -213,6 +213,15 @@ footer {
 }
 
 
+/* Solo cambia el texto de las tarjetas de emprendedor */
+.emprendedor-section .card,
+.emprendedor-section .card p,
+.emprendedor-section .card h3 {
+    color: #333333; /* gris oscuro para buena legibilidad */
+}
+
+
+
 
 
 .lista-categorias {
