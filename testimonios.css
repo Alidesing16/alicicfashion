@@ -203,11 +203,10 @@ footer {
 
 
 .video-container-small {
-  width: 300px;      /* tamaño más pequeño */
-  height: 533px;     /* relación vertical aproximada */
-  margin: 0 auto;    /* lo centra */
-  border-radius: 12px;
-  overflow: hidden;
+  width: 60%;   /* ocupa el 60% del ancho disponible */
+  max-width: 350px;
+  aspect-ratio: 9 / 16; /* mantiene la forma vertical */
+  margin: 0 auto;
 }
 
 .video-container-small iframe {
