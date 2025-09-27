@@ -200,3 +200,17 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+
+.video-container-small {
+  width: 300px;      /* tamaño más pequeño */
+  height: 533px;     /* relación vertical aproximada */
+  margin: 0 auto;    /* lo centra */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-container-small iframe {
+  width: 100%;
+  height: 100%;
+}
