@@ -466,3 +466,52 @@ body {
   background: #ffdf00;
   color: #000;
 }
+
+
+
+
+
+.decoracion {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none; /* para que no molesten al dar clic */
+}
+
+.halloween-calabaza {
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  background: url('calabaza.png') no-repeat center/contain;
+}
+
+.halloween-arana {
+  top: 20px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background: url('arana.png') no-repeat center/contain;
+  animation: bajar-arana 5s infinite alternate;
+}
+
+.halloween-murcielago {
+  top: 100px;
+  left: 30%;
+  width: 70px;
+  height: 70px;
+  background: url('murcielago.png') no-repeat center/contain;
+  animation: volar-murcielago 6s infinite linear;
+}
+
+/* Animación de la araña bajando */
+@keyframes bajar-arana {
+  from { transform: translateY(0); }
+  to { transform: translateY(100px); }
+}
+
+/* Animación del murciélago volando */
+@keyframes volar-murcielago {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(200px) rotate(10deg); }
+  100% { transform: translateX(0); }
+}
