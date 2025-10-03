@@ -482,7 +482,8 @@ body {
   left: 20px;
   width: 80px;
   height: 80px;
-  background: url('calabaza.png') no-repeat center/contain;
+  position: fixed;
+  background: url('https://cdn-icons-png.flaticon.com/512/4151/4151022.png') no-repeat center/contain;
 }
 
 .halloween-arana {
@@ -490,7 +491,8 @@ body {
   right: 50px;
   width: 60px;
   height: 60px;
-  background: url('arana.png') no-repeat center/contain;
+  position: fixed;
+  background: url('https://cdn-icons-png.flaticon.com/512/5542/5542816.png') no-repeat center/contain;
   animation: bajar-arana 5s infinite alternate;
 }
 
@@ -499,7 +501,8 @@ body {
   left: 30%;
   width: 70px;
   height: 70px;
-  background: url('murcielago.png') no-repeat center/contain;
+  position: fixed;
+  background: url('https://cdn-icons-png.flaticon.com/512/616/616408.png') no-repeat center/contain;
   animation: volar-murcielago 6s infinite linear;
 }
 
