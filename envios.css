@@ -240,7 +240,12 @@ main.envios-contenido ul {
   transform: scale(1.1);
 }
 
-
+.logo-google {
+  width: 120px;   /* ajusta el tamaño que quieras */
+  height: auto;   /* mantiene la proporción */
+  display: block;
+  margin: 20px auto; /* la centra en la página */
+}
 
 
 .boton-dudas {
