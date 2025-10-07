@@ -1,49 +1,70 @@
-<------  TEXTO HALLOWEEN -------->
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
-/* --- Banner Halloween limpio --- */
+/* --- Banner Halloween con fondo naranja --- */
 .halloween-banner {
-  background: radial-gradient(circle at center, #1a001a 0%, #000 80%);
+  background: linear-gradient(180deg, #ff6600, #ff8c1a);
   text-align: center;
   padding: 60px 20px;
   position: relative;
   overflow: hidden;
-  border-top: 3px solid #ff6600;
-  border-bottom: 3px solid #ff6600;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Efecto telaraña sutil con CSS puro --- */
-.halloween-banner::before {
-  content: "";
+/* --- Arañas decorativas --- */
+.spider {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(
-      45deg,
-      rgba(255, 102, 0, 0.1) 0px,
-      rgba(255, 102, 0, 0.1) 2px,
-      transparent 2px,
-      transparent 8px
-  );
-  opacity: 0.2;
-  z-index: 0;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  top: -40px;
+  animation: spiderDrop 6s infinite ease-in-out;
 }
 
+.spider::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background: black;
+  transform: translateX(-50%);
+}
+
+.spider-left {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.spider-right {
+  right: 20%;
+  animation-delay: 3s;
+}
+
+/* --- Animación de la araña --- */
+@keyframes spiderDrop {
+  0%, 100% {
+    top: -40px;
+  }
+  50% {
+    top: 40px;
+  }
+}
+
+/* --- Texto principal --- */
 .halloween-title {
   font-family: 'Creepster', cursive;
   font-size: 3rem;
-  color: #ff6600;
-  text-shadow:
-    0 0 10px #ff6600,
-    0 0 20px #ff3300,
-    0 0 40px #ff00ff,
-    0 0 60px #ff00ff;
+  color: #000;
+  text-shadow: 
+    0 0 10px #fff, 
+    0 0 20px #fff;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
-  animation: halloweenGlow 2s infinite alternate;
 }
 
 .halloween-text {
@@ -51,27 +72,5 @@
   font-size: 1.2rem;
   position: relative;
   z-index: 1;
-  text-shadow: 0 0 5px #ff6600;
+  text-shadow: 0 0 5px #000;
 }
-
-/* --- Animación de brillo --- */
-@keyframes halloweenGlow {
-  from {
-    text-shadow:
-      0 0 10px #ff6600,
-      0 0 20px #ff3300,
-      0 0 40px #ff00ff;
-  }
-  to {
-    text-shadow:
-      0 0 20px #ff9933,
-      0 0 40px #ff00ff,
-      0 0 60px #ff00ff,
-      0 0 80px #ff6600;
-  }
-}
-
-
-
-
-
