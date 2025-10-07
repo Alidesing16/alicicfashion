@@ -1,76 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600&display=swap');
 
-/* --- Banner Halloween con fondo naranja --- */
+/* --- Banner Halloween --- */
 .halloween-banner {
-  background: linear-gradient(180deg, #ff6600, #ff8c1a);
-  text-align: center;
+  background: linear-gradient(90deg, #ff6600, #ff8533, #000);
   padding: 60px 20px;
+  border-radius: 20px;
+  text-align: center;
   position: relative;
   overflow: hidden;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  width: 85%;
+  margin: 40px auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
 }
 
-/* --- Arañas decorativas --- */
+/* --- Contenido --- */
+.halloween-content h2 {
+  font-family: 'Creepster', cursive;
+  font-size: 2.8rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px #000;
+  margin-bottom: 10px;
+}
+
+.halloween-content p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.btn-halloween {
+  background: #000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.btn-halloween:hover {
+  background: #ff6600;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* --- Arañas --- */
 .spider {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background: black;
   border-radius: 50%;
-  top: -40px;
+  top: -50px;
   animation: spiderDrop 6s infinite ease-in-out;
 }
 
 .spider::before {
   content: '';
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 50%;
   width: 2px;
-  height: 40px;
+  height: 50px;
   background: black;
   transform: translateX(-50%);
 }
 
 .spider-left {
-  left: 20%;
+  left: 15%;
   animation-delay: 0s;
 }
 
 .spider-right {
-  right: 20%;
+  right: 15%;
   animation-delay: 3s;
 }
 
-/* --- Animación de la araña --- */
 @keyframes spiderDrop {
-  0%, 100% {
-    top: -40px;
-  }
-  50% {
-    top: 40px;
-  }
+  0%, 100% { top: -50px; }
+  50% { top: 50px; }
 }
 
-/* --- Texto principal --- */
-.halloween-title {
-  font-family: 'Creepster', cursive;
-  font-size: 3rem;
-  color: #000;
-  text-shadow: 
-    0 0 10px #fff, 
-    0 0 20px #fff;
-  margin-bottom: 10px;
-  position: relative;
-  z-index: 1;
-}
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .halloween-banner {
+    width: 95%;
+    padding: 40px 10px;
+  }
 
-.halloween-text {
-  color: #fff;
-  font-size: 1.2rem;
-  position: relative;
-  z-index: 1;
-  text-shadow: 0 0 5px #000;
+  .halloween-content h2 {
+    font-size: 2rem;
+  }
+
+  .halloween-content p {
+    font-size: 1rem;
+  }
 }
