@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+/* --- Banner Aniversario --- */
+.aniversario-banner {
+  background: linear-gradient(90deg, #fff0f6, #ffd6e0, #ffb6c1);
+  padding: 60px 25px;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  margin: 50px auto;
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
+}
+
+/* --- Contenido --- */
+.aniversario-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.aniversario-content p {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.aniversario-content span {
+  color: #e91e63;
+  font-weight: 600;
+}
+
+/* --- Botón --- */
+.btn-aniversario {
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(233, 30, 99, 0.5);
+}
+
+.btn-aniversario:hover {
+  background: #fff;
+  color: #e91e63;
+  transform: scale(1.05);
+}
+
+/* --- Confetti --- */
+.confetti {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  animation: confettiFloat 6s infinite ease-in-out;
+}
+
+.confetti-left {
+  top: -10px;
+  left: 10%;
+  background: #ff80ab;
+  animation-delay: 0s;
+}
+
+.confetti-right {
+  top: -10px;
+  right: 10%;
+  background: #ffd54f;
+  animation-delay: 3s;
+}
+
+@keyframes confettiFloat {
+  0%, 100% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(40px); opacity: 0.7; }
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .aniversario-banner {
+    width: 95%;
+    padding: 40px 15px;
+  }
+
+  .aniversario-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .aniversario-content p {
+    font-size: 1rem;
+  }
+}
