@@ -131,27 +131,54 @@ body {
 
 /* --- mini carusel --- */
 .mini-carrusel {
+  position: relative;
   width: 100%;
+  max-width: 250px; /* puedes ajustarlo */
+  margin: 0 auto 10px;
   overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 10px;
 }
 
 .carrusel-imagenes {
   display: flex;
-  width: calc(100% * 8);
-  animation: moverCarrusel 16s infinite linear;
+  transition: transform 0.4s ease-in-out;
 }
 
 .carrusel-imagenes img {
   width: 100%;
-  flex-shrink: 0;
+  height: auto;
+  object-fit: contain; /* para que se ajuste al tamaño real */
   border-radius: 15px;
 }
 
-@keyframes moverCarrusel {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-800%); }
+/* Botones */
+.mini-carrusel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-carrusel .prev {
+  left: 5px;
+}
+
+.mini-carrusel .next {
+  right: 5px;
+}
+
+.mini-carrusel button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* --- Galería de Promos --- */
