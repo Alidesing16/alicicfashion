@@ -113,5 +113,20 @@
   <footer class="promo-footer">
     <p>© 2025 Ali Cic Fashion | Celebrando nuestro primer aniversario 💝</p>
   </footer>
+  <script>
+function moverCarrusel(boton, direccion) {
+  const carrusel = boton.parentElement.querySelector(".carrusel-imagenes");
+  const total = carrusel.children.length;
+  let indexActual = parseInt(carrusel.getAttribute("data-index")) || 0;
+
+  indexActual += direccion;
+
+  if (indexActual < 0) indexActual = total - 1;
+  if (indexActual >= total) indexActual = 0;
+
+  carrusel.style.transform = `translateX(-${indexActual * 100}%)`;
+  carrusel.setAttribute("data-index", indexActual);
+}
+</script>
 </body>
 </html>
