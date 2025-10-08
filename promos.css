@@ -129,7 +129,30 @@ body {
   color: #C2185B;
 }
 
+/* --- mini carusel --- */
+.mini-carrusel {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
 
+.carrusel-imagenes {
+  display: flex;
+  width: calc(100% * 8);
+  animation: moverCarrusel 16s infinite linear;
+}
+
+.carrusel-imagenes img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 15px;
+}
+
+@keyframes moverCarrusel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-800%); }
+}
 
 /* --- Galería de Promos --- */
 .promo-galeria {
