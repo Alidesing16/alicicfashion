@@ -1,101 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;600&display=swap');
-
-/* --- Banner Halloween --- */
-.halloween-banner {
-  background: linear-gradient(90deg, #ff6600, #ff8533, #000);
-  padding: 60px 20px;
-  border-radius: 20px;
+/* 💖 Banner flotante de aniversario Ali Cic Fashion */
+.aniversario-flotante {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5, #fff);
+  color: #555;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  width: 85%;
-  margin: 40px auto;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  padding: 25px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  animation: aparecer 1s ease;
+  border-bottom: 3px solid #f8cdda;
 }
 
-/* --- Contenido --- */
-.halloween-content h2 {
-  font-family: 'Creepster', cursive;
-  font-size: 2.8rem;
-  color: #fff;
-  text-shadow: 2px 2px 8px #000;
-  margin-bottom: 10px;
+.aniversario-contenido h2 {
+  color: #d89acb;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
-.halloween-content p {
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px 5px #000;
+.aniversario-contenido p {
+  font-size: 1rem;
+  color: #6d597a;
+  margin: 5px 0;
 }
 
-.btn-halloween {
-  background: #000;
-  color: #fff;
-  padding: 12px 28px;
+.texto-promos {
+  color: #c77dff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.contador {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #b5838d;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.boton-aniversario {
+  background: linear-gradient(135deg, #f8cdda, #f1e1ff);
+  color: #5a4a61;
+  border: none;
+  padding: 10px 20px;
   border-radius: 30px;
-  font-weight: 600;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   transition: all 0.3s ease;
 }
 
-.btn-halloween:hover {
-  background: #ff6600;
-  color: #000;
+.boton-aniversario:hover {
+  background: linear-gradient(135deg, #f1e1ff, #f8cdda);
   transform: scale(1.05);
 }
 
-/* --- Arañas --- */
-.spider {
+.cerrar-aniversario {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  background: black;
-  border-radius: 50%;
-  top: -50px;
-  animation: spiderDrop 6s infinite ease-in-out;
+  top: 8px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #d9a7c7;
+  font-weight: bold;
 }
 
-.spider::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  width: 2px;
-  height: 50px;
-  background: black;
-  transform: translateX(-50%);
+@keyframes aparecer {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
-.spider-left {
-  left: 15%;
-  animation-delay: 0s;
-}
-
-.spider-right {
-  right: 15%;
-  animation-delay: 3s;
-}
-
-@keyframes spiderDrop {
-  0%, 100% { top: -50px; }
-  50% { top: 50px; }
-}
-
-/* --- Responsive --- */
-@media (max-width: 600px) {
-  .halloween-banner {
-    width: 95%;
-    padding: 40px 10px;
+/* 📱 Versión móvil */
+@media (max-width: 768px) {
+  .aniversario-contenido h2 {
+    font-size: 1.4rem;
   }
 
-  .halloween-content h2 {
-    font-size: 2rem;
+  .aniversario-contenido p {
+    font-size: 0.9rem;
   }
 
-  .halloween-content p {
-    font-size: 1rem;
+  .boton-aniversario {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
