@@ -305,3 +305,82 @@ footer:last-of-type {
   background-color: #e91e63;
   color: white;
 }
+
+
+
+
+.promo-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #d96bff, #ff9ad9);
+  color: #fff;
+  padding: 18px 22px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+  max-width: 280px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  animation: flotar 1.5s ease-in-out infinite alternate;
+}
+
+.promo-contenido h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.promo-contenido p {
+  font-size: 0.95em;
+  margin: 6px 0;
+}
+
+#countdown {
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 1.1em;
+  background: rgba(255,255,255,0.2);
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.cerrar-promo {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cerrar-promo:hover {
+  transform: scale(1.2);
+}
+
+@keyframes flotar {
+  from { transform: translateY(0); }
+  to { transform: translateY(-6px); }
+}
+
+/* Modo responsive */
+@media (max-width: 600px) {
+  .promo-flotante {
+    bottom: 10px;
+    right: 10px;
+    max-width: 230px;
+    padding: 14px 18px;
+  }
+
+  .promo-contenido h3 {
+    font-size: 1em;
+  }
+
+  #countdown {
+    font-size: 0.9em;
+  }
+}
