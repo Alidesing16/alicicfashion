@@ -87,3 +87,40 @@
     padding: 8px 16px;
   }
 }
+
+
+
+/* 🌸 Frase especial debajo del menú */
+.frase-aniversario {
+  text-align: center;
+  background: linear-gradient(135deg, #fce4ec, #f3e5f5, #fff);
+  color: #6d597a;
+  padding: 25px 10px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 2px solid #f8cdda;
+}
+
+.frase-aniversario p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.frase-aniversario span {
+  display: block;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #b5838d;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .frase-aniversario p {
+    font-size: 1rem;
+  }
+  .frase-aniversario span {
+    font-size: 0.9rem;
+  }
+}
