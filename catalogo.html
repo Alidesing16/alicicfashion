@@ -43,6 +43,55 @@
 </div>
   </header>
 
+  <!-- 🔍 Buscador de productos -->
+<div class="buscador-container">
+  <input
+    type="text"
+    id="buscador"
+    placeholder="Buscar productos..."
+    onkeyup="filtrarProductos()"
+  />
+  <i class="fas fa-search icono-buscar"></i>
+</div>
+
+<!-- 🛍️ Lista de productos -->
+<div id="lista-productos">
+  <div class="producto">
+    <h3>Conjunto deportivo</h3>
+    <p>Disponible en varias tallas</p>
+  </div>
+  <div class="producto">
+    <h3>Jean levantacola</h3>
+    <p>Color azul y negro</p>
+  </div>
+  <div class="producto">
+    <h3>Blusa elegante</h3>
+    <p>Perfecta para ocasiones especiales</p>
+  </div>
+  <div class="producto">
+    <h3>Vestido casual</h3>
+    <p>Ideal para el día a día</p>
+  </div>
+  <!-- Agrega más productos aquí -->
+</div>
+
+<script>
+  function filtrarProductos() {
+    const input = document.getElementById("buscador");
+    const filtro = input.value.toLowerCase();
+    const productos = document.getElementsByClassName("producto");
+
+    for (let i = 0; i < productos.length; i++) {
+      let nombre = productos[i].getElementsByTagName("h3")[0];
+      if (nombre.innerHTML.toLowerCase().indexOf(filtro) > -1) {
+        productos[i].style.display = "";
+      } else {
+        productos[i].style.display = "none";
+      }
+    }
+  }
+</script>
+
 <section class="boton-opinion-google">
   <a href="https://g.page/r/CZ2FSjwngT1ZEAI/review" target="_blank">
     <img src="Google.svg.png" alt="Google icono">
