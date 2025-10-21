@@ -384,6 +384,20 @@ jg
     document.querySelector('.promo-flotante').style.display = 'none';
   }
 </script>
+
+    <!-- 🔹 Botón flotante del carrito -->
+<a href="carrito.html" class="carrito-btn">
+  🛒 <span id="contador-carrito">0</span>
+</a>
+
+<!-- Script para actualizar el contador -->
+<script>
+  function actualizarContador() {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    document.getElementById("contador-carrito").textContent = carrito.length;
+  }
+  actualizarContador();
+</script>
     
 </body>
 </html>
