@@ -482,51 +482,6 @@ body {
 
 <------  cuadro flotante -------->
 
-/* 🟣 Cuadro flotante de promociones (ajustado) */
-#promo-flotante {
-  position: fixed !important;
-  bottom: 25px;
-  left: 25px;
-  background-color: #fff4fb;
-  color: #333;
-  border: 2px solid #ff69b4;
-  border-radius: 15px;
-  padding: 15px 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 99999 !important;
-  max-width: 270px;
-  font-family: 'Poppins', sans-serif;
-  animation: aparecer 0.5s ease;
-}
-
-#promo-flotante h3 {
-  margin: 0 0 5px 0;
-  color: #ff4081;
-  font-size: 16px;
-  text-align: center;
-}
-
-#promo-flotante p {
-  margin: 5px 0;
-  font-size: 14px;
-  text-align: center;
-}
-
-#cerrar-promo {
-  background: none;
-  border: none;
-  color: #ff4081;
-  font-weight: bold;
-  float: right;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-@keyframes aparecer {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* 🛒 Botón flotante del carrito */
 .carrito-btn {
   position: fixed;
