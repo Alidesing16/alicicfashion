@@ -348,44 +348,13 @@ jg
   };
 </script>
 
-    
-<!-- 🔸 CUADRO FLOTANTE PROMOS -->
-<div id="promo-flotante">
-  <button id="cerrar-promo">✖</button>
-  <h3>🎃 ¡Promos de Halloween! 👻</h3>
-  <p>🛍️ Aprovecha nuestras ofertas hasta el <b>31 de octubre</b></p>
-  <p id="countdown"></p>
-</div>
 
 <!-- 🔹 BOTÓN FLOTANTE CARRITO -->
 <a href="carrito.html" class="carrito-btn">
   🛒 <span id="contador-carrito">0</span>
 </a>
-
 <script>
-  /* 🕐 CRONÓMETRO HASTA EL 31 DE OCTUBRE */
-  const countDownDate = new Date("Oct 31, 2025 23:59:59").getTime();
-  const countdown = document.getElementById("countdown");
-
-  const timer = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-    if (distance < 0) {
-      clearInterval(timer);
-      countdown.innerHTML = "🎉 ¡Promos finalizadas!";
-      return;
-    }
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-  }, 1000);
-
-  /* ❌ CERRAR PROMO */
-  document.getElementById("cerrar-promo").addEventListener("click", () => {
-    document.getElementById("promo-flotante").style.display = "none";
-  });
+ 
 
   /* 🛒 CONTADOR DEL CARRITO */
   function actualizarContador() {
