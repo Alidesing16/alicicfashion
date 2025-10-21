@@ -595,3 +595,5 @@ body {
     color: #fff !important; /* icono del menú (las tres líneas) blanco */
   }
 }
+background-color: rgba(31, 31, 31, 0.95) !important;
+backdrop-filter: blur(6px);
