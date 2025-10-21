@@ -887,6 +887,15 @@
     </div>
   </footer>
 
+<script>
+function agregarAlCarrito(nombre, talla, precio) {
+  let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  carrito.push({ nombre, talla, precio });
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  alert("Producto agregado al carrito 🛒");
+}
+</script>
+        
   <footer>
     © 2025 Alirio Avendaño - Todos los derechos reservados
   </footer>
