@@ -569,3 +569,29 @@ body {
     height: 55px;
   }
 }
+
+
+/* 🌸 Menú móvil con fondo gris oscuro y texto blanco */
+@media (max-width: 768px) {
+  nav {
+    background-color: #1f1f1f !important; /* gris oscuro */
+    color: #fff !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* sombra suave */
+  }
+
+  nav ul {
+    background-color: #1f1f1f !important; /* mismo gris para consistencia */
+  }
+
+  nav a {
+    color: #fff !important; /* texto blanco */
+  }
+
+  nav a:hover {
+    color: #f5b6e1 !important; /* rosado pastel al pasar el cursor */
+  }
+
+  .menu-toggle {
+    color: #fff !important; /* icono del menú (las tres líneas) blanco */
+  }
+}
