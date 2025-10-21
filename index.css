@@ -482,78 +482,82 @@ body {
 
 <------  cuadro flotante -------->
 
-.promo-flotante {
+/* 🟣 Cuadro flotante de promociones */
+#promo-flotante {
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  background: linear-gradient(135deg, #d96bff, #ff9ad9);
-  color: #fff;
-  padding: 18px 22px;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  z-index: 9999;
-  max-width: 280px;
-  text-align: center;
+  left: 20px;
+  background-color: #fff4fb;
+  color: #333;
+  border: 2px solid #ff69b4;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9998;
+  max-width: 270px;
   font-family: 'Poppins', sans-serif;
-  animation: flotar 1.5s ease-in-out infinite alternate;
+  animation: aparecer 0.5s ease;
 }
 
-.promo-contenido h3 {
-  margin: 0;
-  font-size: 1.2em;
-  font-weight: bold;
+#promo-flotante h3 {
+  margin: 0 0 5px 0;
+  color: #ff4081;
+  font-size: 16px;
+  text-align: center;
 }
 
-.promo-contenido p {
-  font-size: 0.95em;
-  margin: 6px 0;
+#promo-flotante p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
 }
 
-#countdown {
-  font-weight: 600;
-  margin-top: 8px;
-  font-size: 1.1em;
-  background: rgba(255,255,255,0.2);
-  padding: 5px 10px;
-  border-radius: 8px;
-  display: inline-block;
-}
-
-.cerrar-promo {
-  position: absolute;
-  top: 6px;
-  right: 10px;
-  background: transparent;
+#cerrar-promo {
+  background: none;
   border: none;
-  color: white;
-  font-size: 1.2em;
+  color: #ff4081;
+  font-weight: bold;
+  float: right;
   cursor: pointer;
-  transition: transform 0.3s;
+  font-size: 16px;
 }
 
-.cerrar-promo:hover {
-  transform: scale(1.2);
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes flotar {
-  from { transform: translateY(0); }
-  to { transform: translateY(-6px); }
+/* 🛒 Botón flotante del carrito */
+.carrito-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: #d9d9d9; /* gris suave */
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
 }
 
-/* Modo responsive */
-@media (max-width: 600px) {
-  .promo-flotante {
-    bottom: 10px;
-    right: 10px;
-    max-width: 230px;
-    padding: 14px 18px;
-  }
+.carrito-btn:hover {
+  background-color: #ff69b4; /* rosado Ali Cic Fashion */
+  color: white;
+  transform: scale(1.05);
+}
 
-  .promo-contenido h3 {
-    font-size: 1em;
-  }
-
-  #countdown {
-    font-size: 0.9em;
-  }
+#contador-carrito {
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
 }
