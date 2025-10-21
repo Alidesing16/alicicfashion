@@ -124,3 +124,29 @@
     font-size: 0.9rem;
   }
 }
+
+
+
+/* 🎈 Animación de emojis flotantes */
+.emoji-flotante {
+  position: fixed;
+  bottom: -50px;
+  font-size: 2rem;
+  animation: flotar 10s linear infinite;
+  z-index: 1000;
+  opacity: 0.8;
+}
+
+@keyframes flotar {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
