@@ -348,15 +348,7 @@ jg
   };
 </script>
 
-<div class="promo-flotante">
-  <div class="promo-contenido">
-    <h3>🎀 ¡Promos de Halloween! 🎃</h3>
-    <p>✨ Aprovecha nuestras ofertas hasta el 31 de octubre ✨</p>
-    <div id="countdown"></div>
-  </div>
-  <button class="cerrar-promo" onclick="cerrarPromo()">✖</button>
-</div>
-
+    
 <!-- 🔸 CUADRO FLOTANTE PROMOS -->
 <div id="promo-flotante">
   <button id="cerrar-promo">✖</button>
@@ -403,19 +395,9 @@ jg
   actualizarContador();
 </script>
 
-    <!-- 🔹 Botón flotante del carrito -->
-<a href="carrito.html" class="carrito-btn">
-  🛒 <span id="contador-carrito">0</span>
-</a>
 
-<!-- Script para actualizar el contador -->
-<script>
-  function actualizarContador() {
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    document.getElementById("contador-carrito").textContent = carrito.length;
-  }
-  actualizarContador();
-</script>
+
+
     
 </body>
 </html>
