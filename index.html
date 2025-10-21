@@ -347,5 +347,43 @@ jg
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 </script>
+
+<div class="promo-flotante">
+  <div class="promo-contenido">
+    <h3>🎀 ¡Promos de Halloween! 🎃</h3>
+    <p>✨ Aprovecha nuestras ofertas hasta el 31 de octubre ✨</p>
+    <div id="countdown"></div>
+  </div>
+  <button class="cerrar-promo" onclick="cerrarPromo()">✖</button>
+</div>
+
+<script>
+  // Fecha límite: 31 de octubre a medianoche
+  const countDownDate = new Date("Oct 31, 2025 23:59:59").getTime();
+
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "🎉 ¡Promoción finalizada!";
+    }
+  }, 1000);
+
+  // Cerrar el cuadro
+  function cerrarPromo() {
+    document.querySelector('.promo-flotante').style.display = 'none';
+  }
+</script>
+    
 </body>
 </html>
