@@ -381,7 +381,7 @@ body {
 }
 
 
-<------  cuadro flotante -------->
+
 
 .formas-pago {
   background-color: #fff0f5;
@@ -427,6 +427,60 @@ body {
   transform: scale(1.05);
 }
 
+
+<------  DECORACION DE HALLOWEEN -------->
+
+
+.decoracion {
+  position: fixed;
+  z-index: 999;
+  pointer-events: none; /* para que no molesten al dar clic */
+}
+
+.halloween-calabaza {
+  bottom: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/029/338/143/small_2x/3d-halloween-pumpkin-with-witch-hat-icon-png.png') no-repeat center/contain;
+}
+
+.halloween-arana {
+  top: 20px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  background: url('https://png.pngtree.com/png-clipart/20220911/original/pngtree-spider-halloween-in-gray-png-image_8542493.png') no-repeat center/contain;
+  animation: bajar-arana 5s infinite alternate;
+}
+
+.halloween-murcielago {
+  top: 100px;
+  left: 30%;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  background: url('https://www.supercoloring.com/sites/default/files/fif/2017/09/halloween-bat-template-paper-craft.png') no-repeat center/contain;
+  animation: volar-murcielago 6s infinite linear;
+}
+
+/* Animación de la araña bajando */
+@keyframes bajar-arana {
+  from { transform: translateY(0); }
+  to { transform: translateY(100px); }
+}
+
+/* Animación del murciélago volando */
+@keyframes volar-murcielago {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(200px) rotate(10deg); }
+  100% { transform: translateX(0); }
+}
+
+
+<------  cuadro flotante -------->
 
 .promo-flotante {
   position: fixed;
@@ -502,59 +556,4 @@ body {
   #countdown {
     font-size: 0.9em;
   }
-}
-
-
-
-
-
-<------  DECORACION DE HALLOWEEN -------->
-
-
-.decoracion {
-  position: fixed;
-  z-index: 999;
-  pointer-events: none; /* para que no molesten al dar clic */
-}
-
-.halloween-calabaza {
-  bottom: 20px;
-  left: 20px;
-  width: 80px;
-  height: 80px;
-  position: fixed;
-  background: url('https://static.vecteezy.com/system/resources/thumbnails/029/338/143/small_2x/3d-halloween-pumpkin-with-witch-hat-icon-png.png') no-repeat center/contain;
-}
-
-.halloween-arana {
-  top: 20px;
-  right: 50px;
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  background: url('https://png.pngtree.com/png-clipart/20220911/original/pngtree-spider-halloween-in-gray-png-image_8542493.png') no-repeat center/contain;
-  animation: bajar-arana 5s infinite alternate;
-}
-
-.halloween-murcielago {
-  top: 100px;
-  left: 30%;
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  background: url('https://www.supercoloring.com/sites/default/files/fif/2017/09/halloween-bat-template-paper-craft.png') no-repeat center/contain;
-  animation: volar-murcielago 6s infinite linear;
-}
-
-/* Animación de la araña bajando */
-@keyframes bajar-arana {
-  from { transform: translateY(0); }
-  to { transform: translateY(100px); }
-}
-
-/* Animación del murciélago volando */
-@keyframes volar-murcielago {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(200px) rotate(10deg); }
-  100% { transform: translateX(0); }
 }
