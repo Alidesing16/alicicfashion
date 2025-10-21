@@ -103,10 +103,12 @@ Desde nuestros primeros pasos, nos hemos enfocado en ofrecer atención cercana, 
       </a>
     </div>
   </footer>
+
+
   <div class="promo-flotante">
   <div class="promo-contenido">
-    <h3>🎀 ¡Promos de Halloween! 🎃</h3>
-    <p>✨ Aprovecha nuestras ofertas hasta el 31 de octubre ✨</p>
+    <h3>🎉 ¡Promos de Halloween! 🎃</h3>
+    <p>¡Aprovecha nuestras ofertas hasta el 31 de octubre!</p>
     <div id="countdown"></div>
   </div>
   <button class="cerrar-promo" onclick="cerrarPromo()">✖</button>
@@ -130,7 +132,7 @@ Desde nuestros primeros pasos, nos hemos enfocado en ofrecer atención cercana, 
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("countdown").innerHTML = "🎉 ¡Promoción finalizada!";
+      document.getElementById("countdown").innerHTML = "¡Promoción finalizada!";
     }
   }, 1000);
 
@@ -138,19 +140,6 @@ Desde nuestros primeros pasos, nos hemos enfocado en ofrecer atención cercana, 
   function cerrarPromo() {
     document.querySelector('.promo-flotante').style.display = 'none';
   }
-</script>
-  <!-- 🔹 Botón flotante del carrito -->
-<a href="carrito.html" class="carrito-btn">
-  🛒 <span id="contador-carrito">0</span>
-</a>
-
-<!-- Script para actualizar el contador -->
-<script>
-  function actualizarContador() {
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    document.getElementById("contador-carrito").textContent = carrito.length;
-  }
-  actualizarContador();
 </script>
 
   <footer>
