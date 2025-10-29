@@ -438,7 +438,19 @@
   }
   actualizarContador();
 </script>
+<script>
+  let slides = document.querySelectorAll('.carrusel-nuevo .slide');
+  let index = 0;
 
+  function cambiarSlide() {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }
+
+  slides[index].classList.add('active');
+  setInterval(cambiarSlide, 5000); // cambia cada 5 segundos
+</script>
 
 </body>
 </html>
