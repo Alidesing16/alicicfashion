@@ -306,3 +306,36 @@ body {
     height: 55px;
   }
 }
+
+
+.promo-betel {
+    background: #fff5f9;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 2px solid #ffb8d7;
+}
+
+.promo-betel h2 {
+    font-size: 26px;
+    color: #d1006c;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.promo-betel-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.promo-betel-content .domi {
+    margin-top: 25px;
+    font-size: 19px;
+    color: #008c2e;
+    font-weight: 600;
+}
