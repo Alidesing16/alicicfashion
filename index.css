@@ -678,3 +678,47 @@ backdrop-filter: blur(6px);
     font-size: 1.5em;
   }
 }
+
+
+.patrocinadores {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.patrocinadores h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.patro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.patro-box {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top: 4px solid #2e7bff;  /* Azul estilo hero */
+  transition: transform 0.25s ease;
+}
+
+.patro-box:hover {
+  transform: translateY(-5px);
+}
+
+.patro-box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
