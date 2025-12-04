@@ -1,32 +1,119 @@
-<section class="nuevos-ingresos">
-    <h2 class="titulo-nuevos">Nuevos Ingresos</h2>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nuevos Ingresos — Ali Cic Fashion</title>
 
-    <div class="grid-productos">
+  <!-- Link al CSS (ajusta la ruta si la guardas en otra carpeta) -->
+  <link rel="stylesheet" href="nuevosingresos.css">
 
-        <!-- PRODUCTO 1 -->
-        <div class="producto">
-            <div class="img-container">
-                <img src="img/producto1a.jpg" class="img-1" alt="Producto 1">
-                <img src="img/producto1b.jpg" class="img-2" alt="Producto 1 alterna">
-                <span class="descuento">5% OFF</span>
-            </div>
-            <h3 class="nombre">Blusa Manga Corta Elegante</h3>
-            <p class="descripcion">Tela fresca, ideal para el día a día. Disponible en varias tallas.</p>
-            <p class="precio">$59.900</p>
+  <!-- Fuente (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <main class="nuevos-ingresos-page">
+    <header class="cabecera">
+      <h1>Nuevos Ingresos</h1>
+      <p class="sub">Descubre las prendas que acaban de llegar al local. Toca la imagen en móvil para ver la vista alterna.</p>
+    </header>
+
+    <section class="grid-productos" aria-label="Productos nuevos">
+      <!-- PRODUCTO 1 -->
+      <article class="producto">
+        <div class="img-container" tabindex="0" aria-label="Imagen producto Blusa. Toca para alternar imagen">
+          <img loading="lazy" src="img/producto1a.jpg" class="img-1" alt="Blusa elegante - vista principal">
+          <img loading="lazy" src="img/producto1b.jpg" class="img-2" alt="Blusa elegante - vista alternativa">
         </div>
-
-        <!-- PRODUCTO 2 -->
-        <div class="producto">
-            <div class="img-container">
-                <img src="img/producto2a.jpg" class="img-1" alt="Producto 2">
-                <img src="img/producto2b.jpg" class="img-2" alt="Producto 2 alterna">
-                <span class="descuento">5% OFF</span>
-            </div>
-            <h3 class="nombre">Conjunto Casual Dama</h3>
-            <p class="descripcion">Conjunto cómodo, ideal para el día y la noche.</p>
-            <p class="precio">$89.900</p>
+        <div class="meta">
+          <h2 class="nombre">Blusa Manga Corta Elegante</h2>
+          <p class="descripcion">Tela fresca, detalle en encaje, disponible en S / M / L.</p>
+          <p class="precio"><span class="precio-viejo">$79.900</span> $59.900</p>
+          <a class="btn-wa" href="https://wa.me/57315XXXXXXX?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Blusa%20Manga%20Corta" aria-label="Contactar por WhatsApp">Consultas</a>
         </div>
+      </article>
 
-        <!-- COPIAR Y PEGAR PARA MÁS PRODUCTOS -->
+      <!-- PRODUCTO 2 -->
+      <article class="producto">
+        <div class="img-container" tabindex="0" aria-label="Imagen producto Conjunto. Toca para alternar imagen">
+          <img loading="lazy" src="img/producto2a.jpg" class="img-1" alt="Conjunto casual - vista principal">
+          <img loading="lazy" src="img/producto2b.jpg" class="img-2" alt="Conjunto casual - vista alternativa">
+        </div>
+        <div class="meta">
+          <h2 class="nombre">Conjunto Casual Dama</h2>
+          <p class="descripcion">Confort y estilo en tonos neutros. Ideal para cualquier ocasión.</p>
+          <p class="precio"><span class="precio-viejo">$129.900</span> $89.900</p>
+          <a class="btn-wa" href="https://wa.me/57315XXXXXXX?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Conjunto%20Casual" aria-label="Contactar por WhatsApp">Consultas</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 3 -->
+      <article class="producto">
+        <div class="img-container" tabindex="0" aria-label="Imagen producto Vestido. Toca para alternar imagen">
+          <img loading="lazy" src="img/producto3a.jpg" class="img-1" alt="Vestido elegante - vista principal">
+          <img loading="lazy" src="img/producto3b.jpg" class="img-2" alt="Vestido elegante - vista alternativa">
+        </div>
+        <div class="meta">
+          <h2 class="nombre">Vestido Midi Floral</h2>
+          <p class="descripcion">Estampado floral, corte ceñido, forro interior.</p>
+          <p class="precio">$99.900</p>
+          <a class="btn-wa" href="https://wa.me/57315XXXXXXX?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Vestido%20Midi" aria-label="Contactar por WhatsApp">Consultas</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 4 -->
+      <article class="producto">
+        <div class="img-container" tabindex="0" aria-label="Imagen producto Short. Toca para alternar imagen">
+          <img loading="lazy" src="img/producto4a.jpg" class="img-1" alt="Short casual - vista principal">
+          <img loading="lazy" src="img/producto4b.jpg" class="img-2" alt="Short casual - vista alternativa">
+        </div>
+        <div class="meta">
+          <h2 class="nombre">Short Chic</h2>
+          <p class="descripcion">Comodidad y diseño, cintura ajustable.</p>
+          <p class="precio"><span class="precio-viejo">$159.900</span> $127.960</p>
+          <a class="btn-wa" href="https://wa.me/57315XXXXXXX?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20Short%20Chic" aria-label="Contactar por WhatsApp">Consultas</a>
+        </div>
+      </article>
+
+      <!-- Añade más <article class="producto"> aquí -->
+    </section>
+  </main>
+
+  <!-- Burbuja circular flotante (centro de la página). Tiene botón para cerrar -->
+  <div id="promo-5" class="promo-5" role="dialog" aria-label="Promoción 5% descuento">
+    <button class="promo-close" aria-label="Cerrar">✕</button>
+    <div class="promo-5-inner">
+      <span class="promo-text">5%</span>
+      <span class="promo-sub">DESCUENTO</span>
     </div>
-</section>
+  </div>
+
+  <!-- JS: alternar imagen en touch / click y cerrar burbuja -->
+  <script>
+    // Alternar imagen en touch/click para cada .img-container
+    document.querySelectorAll('.img-container').forEach(function(container){
+      // click / tap toggles alt image
+      container.addEventListener('click', function(e){
+        // evitar que haga focus accidental si se hace doble click
+        container.classList.toggle('show-alt');
+      });
+      // teclado: enter o espacio también togglean
+      container.addEventListener('keydown', function(e){
+        if (e.key === 'Enter' || e.key === ' '){
+          e.preventDefault();
+          container.classList.toggle('show-alt');
+        }
+      });
+      // opcional: si quieres que al salir del hover en desktop la imagen vuelva, no hacemos nada adicional
+    });
+
+    // Cerrar la promo 5%
+    var promo = document.getElementById('promo-5');
+    var closeBtn = promo.querySelector('.promo-close');
+    closeBtn.addEventListener('click', function(){ promo.style.display = 'none'; });
+  </script>
+
+</body>
+</html>
