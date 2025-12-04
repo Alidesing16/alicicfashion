@@ -1,80 +1,195 @@
-.nuevos-ingresos {
-    padding: 40px 20px;
-    text-align: center;
+/* Variables de color: cambia aquí para que quede como tu sitio */
+:root{
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #777777;
+  --accent: #ff2c7d;     /* color principal (rosa fuerte) */
+  --accent-dark: #d21f63;
+  --card-shadow: 0 8px 20px rgba(15,23,42,0.06);
+  --radius: 16px;
+  --max-width: 1200px;
+  --navy: #0f2b57; /* si tu web usa azul, puedes reemplazar --accent por este */
 }
 
-.titulo-nuevos {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+*{box-sizing: border-box}
+body{
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-.grid-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
+/* contenedor principal */
+.nuevos-ingresos-page{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px 120px; /* espacio para la burbuja si se superpone */
 }
 
-.producto {
-    text-align: center;
+/* cabecera */
+.cabecera h1{
+  font-size: 34px;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sub{
+  color: var(--muted);
+  margin: 0 0 30px;
 }
 
-.img-container {
-    position: relative;
-    width: 100%;
-    border-radius: 18px;
-    overflow: hidden;
+/* GRID */
+.grid-productos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
 }
 
-.img-container img {
-    width: 100%;
-    display: block;
-    transition: opacity 0.4s ease;
+/* Ajustes responsivos */
+@media (max-width:1100px){
+  .grid-productos{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width:820px){
+  .grid-productos{ grid-template-columns: repeat(2, 1fr); gap:18px; }
+}
+@media (max-width:520px){
+  .grid-productos{ grid-template-columns: 1fr; }
 }
 
-.img-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
+/* tarjeta producto */
+.producto{
+  background: transparent;
+  text-align: center;
 }
 
-.img-container:hover .img-2 {
-    opacity: 1;
+/* imagenes: contenedor con overflow para redondeo */
+.img-container{
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+  transition: transform .28s ease, box-shadow .28s ease;
+  background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
 }
 
-.descuento {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ff2674;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px 15px;
-    border-radius: 50px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+/* efecto sutil lift al pasar */
+.img-container:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(15,23,42,0.12);
 }
 
-.nombre {
-    font-size: 17px;
-    font-weight: 600;
-    margin-top: 10px;
-    color: #333;
+/* imágenes superpuestas */
+.img-container img{
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: opacity .35s ease, transform .4s ease;
 }
 
-.descripcion {
-    font-size: 14px;
-    color: #777;
-    margin: 5px 0;
+/* segunda imagen encima, oculta por defecto */
+.img-2{
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  pointer-events: none;
 }
 
-.precio {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff2c7d;
-    margin-top: 5px;
+/* en desktop hover muestra la imagen alternativa */
+@media (hover: hover) and (pointer: fine){
+  .img-container:hover .img-2{ opacity: 1; transform: scale(1); }
+  .img-container:hover .img-1{ opacity: 0; transform: scale(.99); }
 }
+
+/* en touch/por clase .show-alt también se muestra la alterna */
+.img-container.show-alt .img-2{ opacity: 1; }
+.img-container.show-alt .img-1{ opacity: 0; }
+
+/* meta info */
+.meta{ padding: 14px 6px; }
+.nombre{ font-size: 16px; margin: 8px 0 4px; font-weight: 600; color: var(--text); }
+.descripcion{ font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+.precio{ font-size: 16px; color: var(--accent); font-weight: 700; margin: 6px 0; }
+.precio-viejo{ text-decoration: line-through; color: #bdbdbd; font-weight: 500; margin-right:8px; font-size:14px; }
+
+/* boton contactar (WhatsApp) */
+.btn-wa{
+  display:inline-block;
+  margin-top:8px;
+  padding:8px 14px;
+  border-radius: 28px;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  font-weight:600;
+  font-size:14px;
+  box-shadow: 0 8px 22px rgba(15,23,42,0.06);
+}
+
+/* BURBUJA 5% (centro de la página, flotante) */
+.promo-5{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff;
+  box-shadow: 0 20px 50px rgba(15,23,42,0.28);
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* inner texto */
+.promo-5-inner{ text-align:center; pointer-events:none; }
+.promo-text{
+  display:block;
+  font-weight:900;
+  font-size:30px;
+  line-height:1;
+}
+.promo-sub{
+  display:block;
+  font-size:11px;
+  letter-spacing:1px;
+  margin-top:4px;
+}
+
+/* botón de cerrar (pequeño) */
+.promo-close{
+  position:absolute;
+  right:-12px;
+  top:-12px;
+  background:#fff;
+  color:var(--accent-dark);
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  border:0;
+  cursor:pointer;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  font-weight:700;
+}
+
+/* si quieres que la burbuja sea menos intrusiva en móvil */
+@media (max-width:520px){
+  .promo-5{ width:92px; height:92px; border-radius:46px; }
+  .promo-text{ font-size:22px; }
+  .promo-sub{ font-size:10px; }
+}
+
+/* pequeñas mejoras de accesibilidad/foocus */
+.img-container:focus{ outline: 3px solid rgba(34,34,34,0.06); outline-offset: 6px; }
+
+/* util: esconder precio viejo si no hay */
+.precio-viejo:empty{ display:none; }
