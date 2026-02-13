@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.promos {
+  padding: 60px 20px;
+}
+
+.promos h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.promo-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.promo-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.promo-box h3 {
+  margin-bottom: 15px;
+}
+
+.promo-box p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.btn-promos {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-promos:hover {
+  background: #f8b6c6;
+  color: black;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fafafa;
+  font-size: 14px;
+}
