@@ -187,3 +187,17 @@ body {
   from { opacity: 0.6; }
   to { opacity: 1; }
 }
+.season-badge {
+  text-align: center;
+  font-size: 13px;
+  padding: 6px;
+  background: #fff0f4;
+  color: #d6336c;
+  letter-spacing: 1px;
+  animation: fadeSeason 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSeason {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
