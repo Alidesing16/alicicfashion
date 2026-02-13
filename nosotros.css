@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+.contenido {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.contenido h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.contenido p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fafafa;
+  font-size: 14px;
+}
