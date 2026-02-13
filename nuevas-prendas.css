@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.productos {
+  padding: 60px 20px;
+}
+
+.productos h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.producto {
+  width: 280px;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.precio {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f8b6c6;
+  color: black;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fafafa;
+  font-size: 14px;
+}
