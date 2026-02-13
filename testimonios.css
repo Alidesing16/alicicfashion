@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+.testimonios {
+  padding: 60px 20px;
+}
+
+.testimonios h2 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  padding: 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-style: italic;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.card span {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.btn-testimonio {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 12px 30px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-testimonio:hover {
+  background: #f8b6c6;
+  color: black;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  background: #fafafa;
+  font-size: 14px;
+}
