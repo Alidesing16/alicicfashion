@@ -263,26 +263,26 @@ footer {
   transform: translateY(-3px);
 }
 
-
 .mapa-footer {
   margin-top: 20px;
 }
 
-.mapa-footer img {
-  width: 100%;
-  max-width: 180px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-  cursor: pointer;
-}
-
-.mapa-footer img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
 .ubicacion-titulo {
   font-size: 13px;
-  margin-top: 15px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #555;
+}
+
+.mapa-footer iframe {
+  width: 100%;
+  max-width: 220px;
+  height: 160px;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.mapa-footer iframe:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: scale(1.02);
 }
