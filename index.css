@@ -239,3 +239,12 @@ footer {
   margin: auto;
   line-height: 1.5;
 }
+
+.destacado h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #f8b6c6;
+  margin: 15px auto 0 auto;
+}
