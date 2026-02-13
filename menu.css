@@ -7,6 +7,29 @@ body {
   color: black;
 }
 
+/* ===== TEXTO DESLIZANTE SUPERIOR ===== */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: black;
+  color: white;
+  padding: 8px 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.marquee p {
+  display: inline-block;
+  white-space: nowrap;
+  animation: deslizar 18s linear infinite;
+}
+
+@keyframes deslizar {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 /* ===== HEADER ===== */
 
 .main-header {
