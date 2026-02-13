@@ -248,3 +248,17 @@ footer {
   background: #f8b6c6;
   margin: 15px auto 0 auto;
 }
+.hero-imagen img {
+  transition: transform 0.5s ease;
+}
+
+.hero-imagen img:hover {
+  transform: scale(1.03);
+}
+.btn-principal {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.btn-principal:hover {
+  transform: translateY(-3px);
+}
