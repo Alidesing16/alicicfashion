@@ -143,3 +143,26 @@ footer {
 .mini-card:hover {
   transform: translateY(-5px);
 }
+
+/* ===== SECCIÓN CONFIANZA ===== */
+
+.confianza {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 70px 20px;
+  background: #fafafa;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.confianza h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.confianza p {
+  font-size: 14px;
+  color: #555;
+}
