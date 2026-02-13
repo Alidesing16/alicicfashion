@@ -155,3 +155,19 @@ body {
   font-size: 13px;
   color: #777;
 }
+@media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col {
+    align-items: center;
+  }
+
+  .logo-col img {
+    margin: 0 auto 20px auto;
+  }
+
+}
