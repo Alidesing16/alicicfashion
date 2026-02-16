@@ -71,3 +71,35 @@ footer {
   background: #fafafa;
   font-size: 14px;
 }
+/* ===== BANNER EMPRENDEDOR ===== */
+
+.banner-emprende {
+  background: linear-gradient(to right, #ffffff, #fff0f4);
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.banner-contenido h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.btn-descubre {
+  display: inline-block;
+  padding: 14px 45px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+}
+
+.btn-descubre:hover {
+  background: black;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
