@@ -126,3 +126,30 @@ footer {
   font-family: 'Playfair Display', serif;
   margin-bottom: 20px;
 }
+/* ===== BOTÓN CTA NOSOTROS ===== */
+
+.cta-nosotros {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.btn-elegante {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-elegante:hover {
+  background: black;
+  color: white;
+  letter-spacing: 3px;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
