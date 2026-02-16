@@ -33,3 +33,39 @@ footer {
   background: #fafafa;
   font-size: 14px;
 }
+
+
+.nosotros-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 100px 10%;
+  flex-wrap: wrap;
+}
+
+.nosotros-img img {
+  width: 350px;
+  border-radius: 15px;
+  transition: 0.4s ease;
+}
+
+.nosotros-img img:hover {
+  transform: scale(1.03);
+}
+
+.nosotros-texto {
+  max-width: 500px;
+}
+
+.nosotros-texto h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
