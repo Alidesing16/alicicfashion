@@ -171,3 +171,9 @@ footer {
   padding: 5px 10px;
   letter-spacing: 1px;
 }
+.urgencia {
+  text-align: center;
+  padding: 40px;
+  background: #f7f7f7;
+  font-size: 14px;
+}
