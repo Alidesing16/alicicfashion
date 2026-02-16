@@ -71,3 +71,29 @@ footer {
   font-size: 32px;
   margin-bottom: 15px;
 }
+.promo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.promo-card {
+  border: 1px solid black;
+  padding: 40px;
+  text-align: center;
+  width: 250px;
+  transition: 0.3s ease;
+}
+
+.promo-card:hover {
+  background: black;
+  color: white;
+  transform: translateY(-5px);
+}
+
+.promo-card h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
