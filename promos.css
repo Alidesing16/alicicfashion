@@ -97,3 +97,48 @@ footer {
   font-size: 26px;
   margin-bottom: 10px;
 }
+.promo-emprendedor {
+  background: #f7f7f7;
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.promo-emprendedor h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.promo-emprendedor p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #555;
+  font-size: 15px;
+}
+
+.beneficios-emprender {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.beneficios-emprender li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.btn-emprender {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+}
+
+.btn-emprender:hover {
+  background: black;
+  color: white;
+  transform: translateY(-3px);
+}
