@@ -157,3 +157,17 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+.card-nueva {
+  position: relative;
+}
+
+.etiqueta-new {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: black;
+  color: white;
+  font-size: 11px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
