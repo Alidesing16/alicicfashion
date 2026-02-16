@@ -103,3 +103,16 @@ footer {
   color: #f8b6c6;
   margin-right: 10px;
 }
+.valores {
+  padding: 80px 10%;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.valores-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
