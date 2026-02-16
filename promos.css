@@ -60,3 +60,14 @@ footer {
   background: #fafafa;
   font-size: 14px;
 }
+.hero-promos {
+  text-align: center;
+  padding: 100px 10%;
+  background: #fff0f4;
+}
+
+.hero-promos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
