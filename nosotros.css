@@ -84,3 +84,22 @@ footer {
   margin-bottom: 25px;
   color: #222;
 }
+
+.historia {
+  padding: 80px 10%;
+}
+
+.historia h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+.historia-item {
+  margin-bottom: 20px;
+}
+
+.historia-item span {
+  font-weight: bold;
+  color: #f8b6c6;
+  margin-right: 10px;
+}
