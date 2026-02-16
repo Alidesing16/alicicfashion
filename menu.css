@@ -227,3 +227,12 @@ body {
   background: #f8b6c6;
   color: black;
 }
+@media (max-width: 768px) {
+  .google-review-float {
+    transform: none;
+    top: auto;
+    bottom: 90px;
+    left: 15px;
+    border-radius: 30px;
+  }
+}
