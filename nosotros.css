@@ -78,3 +78,9 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transition: 0.4s ease;
 }
+.manifiesto {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #222;
+}
