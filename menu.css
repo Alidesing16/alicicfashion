@@ -236,3 +236,31 @@ body {
     border-radius: 30px;
   }
 }
+.btn-envio-flotante {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  background: black;
+  color: white;
+  padding: 15px 18px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.btn-envio-flotante span {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  color: #ccc;
+}
+
+.btn-envio-flotante:hover {
+  background: #f8b6c6;
+  color: black;
+  transform: translateY(-5px);
+}
