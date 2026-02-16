@@ -174,3 +174,16 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+.frase-final-promos {
+  text-align: center;
+  padding: 100px 10%;
+  background: #ffffff;
+}
+
+.frase-final-promos p {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
