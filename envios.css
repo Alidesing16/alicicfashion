@@ -49,3 +49,74 @@ footer {
   background: #fafafa;
   font-size: 14px;
 }
+.hero-envios {
+  text-align: center;
+  padding: 100px 10%;
+  background: #f7f7f7;
+}
+
+.hero-envios h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.metodos-envio {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.envio-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.envio-card {
+  width: 250px;
+  padding: 30px;
+  border: 1px solid #eee;
+  transition: 0.3s ease;
+}
+
+.envio-card img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.envio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.tiempos-entrega {
+  background: #fff0f4;
+  padding: 60px 10%;
+  text-align: center;
+}
+.metodos-pago {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.metodos-pago ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.metodos-pago li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.direccion {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.confianza {
+  text-align: center;
+  padding: 80px 10%;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
