@@ -148,3 +148,66 @@ footer {
   color: white;
   transform: translateY(-3px);
 }
+
+.hero-emprendedor {
+  text-align: center;
+  padding: 100px 10%;
+  background: #fff0f4;
+}
+
+.hero-emprendedor h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.pasos-emprender,
+.formas-emprender,
+.condiciones {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.formas-emprender {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forma-card {
+  width: 300px;
+  border: 1px solid #eee;
+  padding: 30px;
+  transition: 0.3s ease;
+}
+
+.forma-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.condiciones ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.condiciones li {
+  margin: 10px 0;
+}
+
+.btn-grupo {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 35px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.btn-grupo:hover {
+  background: black;
+  color: white;
+}
