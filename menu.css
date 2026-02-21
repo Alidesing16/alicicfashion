@@ -264,3 +264,27 @@ body {
   color: black;
   transform: translateY(-5px);
 }
+
+/* ===== BOTÓN EMPRENDE FLOTANTE ===== */
+
+.btn-emprende-flotante {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: #f8b6c6;
+  color: black;
+  padding: 12px 18px;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  z-index: 999;
+  font-weight: 500;
+}
+
+.btn-emprende-flotante:hover {
+  background: black;
+  color: white;
+  transform: translateY(-4px);
+}
