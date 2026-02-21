@@ -288,3 +288,13 @@ body {
   color: white;
   transform: translateY(-4px);
 }
+@media (max-width: 768px) {
+
+  .btn-emprende-flotante {
+    left: 15px;
+    bottom: 80px; /* Para que no choque con WhatsApp */
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+}
