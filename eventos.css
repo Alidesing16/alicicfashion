@@ -197,9 +197,8 @@
 
     .evento-nube-septiembre {
 
-        top: 85px;
-
-        right: 12px;
+        top: 450px;
+        right: 10px;
 
         width: 245px;
 
@@ -210,32 +209,20 @@
         gap: 5px;
 
         border-radius: 40px;
-
     }
-
 
     .evento-nube-contenido strong {
-
         font-size: 10px;
-
         letter-spacing: 0.5px;
-
     }
-
 
     .evento-nube-contenido small {
-
         font-size: 8px;
-
         margin-top: 3px;
-
     }
 
-
     .nube-decoracion {
-
         font-size: 12px;
-
     }
 
 }
