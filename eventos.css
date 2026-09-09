@@ -1,3 +1,48 @@
+/* =================================
+   EVENTO SEPTIEMBRE
+================================= */
+
+.evento-septiembre {
+    width: 100%;
+    background: #fff1f5;
+    color: #d4145a;
+    text-align: center;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+
+    animation: brilloSeptiembre 3s ease-in-out infinite;
+}
+
+@keyframes brilloSeptiembre {
+
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .evento-septiembre {
+        font-size: 11px;
+        padding: 7px 10px;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+
+
 /* =====================================================
    ☁️ EVENTO SEPTIEMBRE - ALI CIC FASHION
    ===================================================== */
