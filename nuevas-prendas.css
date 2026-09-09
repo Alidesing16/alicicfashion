@@ -342,3 +342,144 @@ footer {
         min-height: 65px;
     }
 }
+/* =====================================================
+   ALI CIC FASHION
+   SECCIÓN: CTA FINAL WHATSAPP
+   ===================================================== */
+
+.cta-final-ali {
+    width: 100%;
+
+    padding: 95px 20px;
+
+    background: #f8dce8;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* PEQUEÑO TÍTULO */
+
+.cta-final-ali > span {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #a61e5c;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* TÍTULO */
+
+.cta-final-ali h2 {
+    max-width: 800px;
+
+    margin: 0 auto 18px;
+
+    color: #111111;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+}
+
+
+/* DESCRIPCIÓN */
+
+.cta-final-ali p {
+    max-width: 650px;
+
+    margin: 0 auto 35px;
+
+    color: #555555;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* BOTÓN WHATSAPP */
+
+.btn-whatsapp-final {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 16px 30px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 40px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.btn-whatsapp-final:hover {
+    transform: translateY(-4px);
+
+    background: #d63384;
+
+    box-shadow: 0 15px 30px rgba(214, 51, 132, 0.25);
+}
+
+
+/* TABLET */
+
+@media (max-width: 850px) {
+
+    .cta-final-ali h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .cta-final-ali {
+        padding: 70px 20px;
+    }
+
+    .cta-final-ali h2 {
+        font-size: 29px;
+    }
+
+    .cta-final-ali p {
+        font-size: 15px;
+    }
+
+    .btn-whatsapp-final {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 15px 20px;
+    }
+}
