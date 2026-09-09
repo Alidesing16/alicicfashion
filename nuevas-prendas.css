@@ -177,3 +177,168 @@ footer {
   background: #f7f7f7;
   font-size: 14px;
 }
+/* =====================================================
+   ALI CIC FASHION
+   SECCIÓN: CATEGORÍAS
+   ===================================================== */
+
+.categorias-ali {
+    width: 100%;
+    padding: 80px 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.categorias-ali .titulo-seccion {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.categorias-ali .titulo-seccion span {
+    display: block;
+    margin-bottom: 10px;
+    color: #d63384;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.categorias-ali .titulo-seccion h2 {
+    margin: 0 0 15px;
+    color: #111111;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.categorias-ali .titulo-seccion p {
+    margin: 0 auto;
+    max-width: 650px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* GRID DE CATEGORÍAS */
+
+.grid-categorias {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+/* CADA CATEGORÍA */
+
+.grid-categorias a {
+    min-height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px 15px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+
+    color: #111111;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* EFECTO HOVER */
+
+.grid-categorias a:hover {
+    transform: translateY(-5px);
+
+    background: #111111;
+    color: #ffffff;
+
+    border-color: #111111;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .grid-categorias {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .categorias-ali .titulo-seccion h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .categorias-ali {
+        padding: 60px 15px;
+    }
+
+    .categorias-ali .titulo-seccion {
+        margin-bottom: 30px;
+    }
+
+    .categorias-ali .titulo-seccion h2 {
+        font-size: 28px;
+    }
+
+    .categorias-ali .titulo-seccion p {
+        font-size: 15px;
+    }
+
+    .grid-categorias {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .grid-categorias a {
+        min-height: 75px;
+        padding: 15px 8px;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-align: center;
+    }
+}
+
+
+/* CELULARES MUY PEQUEÑOS */
+
+@media (max-width: 380px) {
+
+    .grid-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-categorias a {
+        min-height: 65px;
+    }
+}
