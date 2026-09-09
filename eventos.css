@@ -1,42 +1,223 @@
-/* =================================
-   EVENTO SEPTIEMBRE
-================================= */
+/* =====================================================
+   ☁️ EVENTO SEPTIEMBRE - ALI CIC FASHION
+   ===================================================== */
 
-.evento-septiembre {
-    width: 100%;
-    background: #fff1f5;
-    color: #d4145a;
-    text-align: center;
-    padding: 8px 15px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
+.evento-nube-septiembre {
+    position: fixed;
+    top: 105px;
+    right: 25px;
+
+    z-index: 9998;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: 300px;
+    min-height: 85px;
+
+    padding: 15px 18px;
+
     box-sizing: border-box;
 
-    animation: brilloSeptiembre 3s ease-in-out infinite;
+    text-decoration: none;
+
+    color: #111;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fb,
+            #ffdce8
+        );
+
+    border: 2px solid #f5a9c2;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+    animation:
+        flotarNubeSeptiembre
+        4s ease-in-out infinite;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-@keyframes brilloSeptiembre {
 
-    0%, 100% {
-        opacity: 1;
+/* Efecto al pasar el mouse */
+
+.evento-nube-septiembre:hover {
+
+    transform:
+        translateY(-5px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.20);
+
+}
+
+
+/* Contenido */
+
+.evento-nube-contenido {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    line-height: 1.3;
+}
+
+
+/* Título */
+
+.evento-nube-contenido strong {
+
+    color: #d4145a;
+
+    font-size: 13px;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+/* Subtítulo */
+
+.evento-nube-contenido small {
+
+    margin-top: 5px;
+
+    color: #555;
+
+    font-size: 10px;
+
+    line-height: 1.4;
+
+}
+
+
+/* Brillitos */
+
+.nube-decoracion {
+
+    font-size: 16px;
+
+    animation:
+        brilloEvento
+        2s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   ☁️ ANIMACIÓN DE FLOTACIÓN
+   ===================================================== */
+
+@keyframes flotarNubeSeptiembre {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0);
+
     }
 
     50% {
-        opacity: 0.65;
+
+        transform:
+            translateY(-8px);
+
     }
 
 }
 
 
-/* CELULAR */
+/* =====================================================
+   ✨ ANIMACIÓN DE BRILLO
+   ===================================================== */
+
+@keyframes brilloEvento {
+
+    0%,
+    100% {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+
+    }
+
+    50% {
+
+        opacity: 0.5;
+
+        transform:
+            scale(1.2);
+
+    }
+
+}
+
+
+/* =====================================================
+   📱 CELULARES
+   ===================================================== */
 
 @media (max-width: 600px) {
 
-    .evento-septiembre {
-        font-size: 11px;
-        padding: 7px 10px;
+    .evento-nube-septiembre {
+
+        top: 85px;
+
+        right: 12px;
+
+        width: 245px;
+
+        min-height: 68px;
+
+        padding: 11px 12px;
+
+        gap: 5px;
+
+        border-radius: 40px;
+
+    }
+
+
+    .evento-nube-contenido strong {
+
+        font-size: 10px;
+
         letter-spacing: 0.5px;
+
+    }
+
+
+    .evento-nube-contenido small {
+
+        font-size: 8px;
+
+        margin-top: 3px;
+
+    }
+
+
+    .nube-decoracion {
+
+        font-size: 12px;
+
     }
 
 }
