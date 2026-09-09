@@ -359,3 +359,291 @@ body {
   background: #f7f7f7;
   font-size: 14px;
 }
+
+
+/* =====================================================
+   ALI CIC FASHION
+   SECCIÓN: REDES SOCIALES
+   ===================================================== */
+
+.redes-ali {
+    width: 100%;
+    padding: 80px 20px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* ===============================
+   TÍTULO
+   =============================== */
+
+.titulo-seccion-redes {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    text-align: center;
+}
+
+
+.titulo-seccion-redes span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #d63384;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.titulo-seccion-redes h2 {
+    margin: 0 0 15px;
+
+    color: #111111;
+
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+
+.titulo-seccion-redes p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ===============================
+   USUARIO
+   =============================== */
+
+.redes-usuario {
+    margin: 25px 0 18px;
+
+    text-align: center;
+}
+
+
+.redes-usuario strong {
+    color: #111111;
+
+    font-size: 16px;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ===============================
+   BOTONES REDES
+   =============================== */
+
+.redes-botones {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-bottom: 40px;
+}
+
+
+.redes-botones a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 100px;
+
+    padding: 10px 18px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 25px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.redes-botones a:hover {
+    background: #111111;
+
+    border-color: #111111;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===============================
+   GALERÍA
+   =============================== */
+
+.redes-galeria {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+/* CADA FOTO */
+
+.redes-galeria a {
+    display: block;
+
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 12px;
+
+    background: #f5f5f5;
+}
+
+
+/* IMAGEN */
+
+.redes-galeria img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* EFECTO */
+
+.redes-galeria a:hover img {
+    transform: scale(1.06);
+}
+
+
+/* ===============================
+   VER MÁS
+   =============================== */
+
+.redes-ver-mas {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+
+.redes-ver-mas a {
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: color 0.3s ease;
+}
+
+
+.redes-ver-mas a:hover {
+    color: #d63384;
+}
+
+
+/* ===============================
+   TABLET
+   =============================== */
+
+@media (max-width: 800px) {
+
+    .redes-galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===============================
+   CELULAR
+   =============================== */
+
+@media (max-width: 600px) {
+
+    .redes-ali {
+        padding: 65px 15px;
+    }
+
+
+    .titulo-seccion-redes h2 {
+        font-size: 29px;
+    }
+
+
+    .titulo-seccion-redes p {
+        font-size: 15px;
+    }
+
+
+    .redes-botones {
+        margin-bottom: 30px;
+    }
+
+
+    .redes-botones a {
+        min-width: 85px;
+
+        padding: 9px 14px;
+
+        font-size: 12px;
+    }
+
+
+    .redes-galeria {
+        gap: 8px;
+    }
+
+
+    .redes-galeria a {
+        border-radius: 9px;
+    }
+
+}
