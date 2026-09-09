@@ -4,7 +4,9 @@
 
 .evento-nube-septiembre {
     position: fixed;
-    top: 105px;
+
+    /* Nueva posición */
+    top: 520px;
     right: 25px;
 
     z-index: 9998;
@@ -25,13 +27,29 @@
 
     color: #111;
 
-    background:
-        linear-gradient(
-            135deg,
-            #fff8fb,
-            #ffdce8
-        );
+    background: linear-gradient(
+        135deg,
+        #fff8fb,
+        #ffdce8
+    );
 
+    border: 2px solid #f5a9c2;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+    animation:
+        flotarNubeSeptiembre
+        4s ease-in-out infinite;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+   
     border: 2px solid #f5a9c2;
 
     border-radius: 50px;
