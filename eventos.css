@@ -26,32 +26,96 @@
 
 /* =========================================================
    MENSAJE DEBAJO DEL MENÚ
+   OCTUBRE EN ALI CIC FASHION
    ========================================================= */
 
 .mensaje-post-menu {
-
     width: 100%;
-
-    padding: 10px 20px;
 
     box-sizing: border-box;
 
+    padding: 13px 20px;
+
+    background: #fff8fb;
+
+    border-top: 1px solid #f3e1e8;
+    border-bottom: 1px solid #f3e1e8;
+
     text-align: center;
 
-    background: #ffffff;
-
-    color: #111111;
+    color: #d63384;
 
     font-size: 13px;
 
-    font-weight: 600;
+    font-weight: 800;
 
     letter-spacing: 1px;
 
-    border-bottom: 1px solid #eeeeee;
-
+    line-height: 1.5;
 }
 
+
+/* TEXTO SECUNDARIO */
+
+.mensaje-post-menu span {
+
+    display: inline-block;
+
+    margin-left: 10px;
+
+    color: #666666;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.4px;
+}
+
+
+/* EFECTO SUTIL */
+
+.mensaje-post-menu::before {
+    content: "🍂";
+    margin-right: 6px;
+}
+
+.mensaje-post-menu::after {
+    content: "✦";
+    margin-left: 6px;
+
+    color: #b76e4b;
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .mensaje-post-menu {
+
+        padding: 10px 12px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.5px;
+
+    }
+
+
+    .mensaje-post-menu span {
+
+        display: block;
+
+        margin: 2px 0 0;
+
+        font-size: 9px;
+
+    }
+
+}
 
 /* =========================================================
    NUBE PRINCIPAL
