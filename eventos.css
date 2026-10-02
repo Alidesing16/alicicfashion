@@ -1,134 +1,250 @@
-/* =================================
-   EVENTO SEPTIEMBRE
-================================= */
+/* =========================================================
+   ALI CIC FASHION
+   EVENTOS Y PROMOCIONES
+   TEMÁTICA: OCTUBRE 2026
+   ========================================================= */
 
-.evento-septiembre {
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+
+    --ali-negro: #111111;
+    --ali-blanco: #ffffff;
+
+    --ali-rosa: #f3a6c1;
+    --ali-rosa-fuerte: #d63384;
+    --ali-rosa-claro: #fde8f0;
+
+    --octubre-cobre: #b76e4b;
+    --octubre-crema: #fff8f3;
+
+}
+
+
+/* =========================================================
+   MENSAJE DEBAJO DEL MENÚ
+   ========================================================= */
+
+.mensaje-post-menu {
+
     width: 100%;
-    background: #fff1f5;
-    color: #d4145a;
-    text-align: center;
-    padding: 8px 15px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
+
+    padding: 10px 20px;
+
     box-sizing: border-box;
 
-    animation: brilloSeptiembre 3s ease-in-out infinite;
-}
+    text-align: center;
 
-@keyframes brilloSeptiembre {
+    background: #ffffff;
 
-    0%, 100% {
-        opacity: 1;
-    }
+    color: #111111;
 
-    50% {
-        opacity: 0.65;
-    }
+    font-size: 13px;
 
-}
+    font-weight: 600;
 
+    letter-spacing: 1px;
 
-/* CELULAR */
-
-@media (max-width: 600px) {
-
-    .evento-septiembre {
-        font-size: 11px;
-        padding: 7px 10px;
-        letter-spacing: 0.5px;
-    }
+    border-bottom: 1px solid #eeeeee;
 
 }
 
 
+/* =========================================================
+   NUBE PRINCIPAL
+   OCTUBRE
+   ========================================================= */
 
-/* =====================================================
-   ☁️ EVENTO SEPTIEMBRE - ALI CIC FASHION
-   ===================================================== */
+.evento-nube-octubre {
 
-.evento-nube-septiembre {
     position: fixed;
 
-    /* Nueva posición */
     top: 520px;
     right: 25px;
 
-    z-index: 9998;
+    z-index: 999;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+    width: 285px;
 
-    width: 300px;
-    min-height: 85px;
-
-    padding: 15px 18px;
+    padding: 20px 25px;
 
     box-sizing: border-box;
-
-    text-decoration: none;
-
-    color: #111;
 
     background: linear-gradient(
         135deg,
         #fff8fb,
-        #ffdce8
+        #fde1eb
     );
 
-    border: 2px solid #f5a9c2;
+    border: 2px solid #f3a6c1;
 
-    border-radius: 50px;
+    border-radius: 60px;
 
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.15);
-
-    animation:
-        flotarNubeSeptiembre
-        4s ease-in-out infinite;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-   
-    border: 2px solid #f5a9c2;
-
-    border-radius: 50px;
+    text-align: center;
 
     box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.15);
+        0 10px 30px rgba(0, 0, 0, 0.14);
 
-    animation:
-        flotarNubeSeptiembre
-        4s ease-in-out infinite;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-
-/* Efecto al pasar el mouse */
-
-.evento-nube-septiembre:hover {
-
-    transform:
-        translateY(-5px)
-        scale(1.03);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.20);
+    animation: octubreFlotar 4s ease-in-out infinite;
 
 }
 
 
-/* Contenido */
+/* PEQUEÑO DETALLE DECORATIVO */
 
-.evento-nube-contenido {
+.evento-nube-octubre::before {
+
+    content: "🍂";
+
+    position: absolute;
+
+    top: -12px;
+    left: 20px;
+
+    font-size: 20px;
+
+}
+
+
+.evento-nube-octubre::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 22px;
+    bottom: -8px;
+
+    color: var(--ali-rosa-fuerte);
+
+    font-size: 20px;
+
+}
+
+
+/* DECORACIÓN */
+
+.octubre-decoracion {
+
+    position: absolute;
+
+    top: 10px;
+    right: 18px;
+
+    color: var(--octubre-cobre);
+
+    font-size: 14px;
+
+}
+
+
+/* TÍTULO */
+
+.evento-nube-octubre strong {
+
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--ali-rosa-fuerte);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    letter-spacing: 0.8px;
+
+}
+
+
+/* DESCRIPCIÓN */
+
+.evento-nube-octubre span {
+
+    display: block;
+
+    color: #666666;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+}
+
+
+/* PROMO */
+
+.evento-nube-octubre small {
+
+    display: inline-block;
+
+    margin-top: 9px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* ANIMACIÓN */
+
+@keyframes octubreFlotar {
+
+    0%,
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-7px);
+
+    }
+
+}
+
+
+/* =========================================================
+   PROMOCIÓN FLOTANTE
+   ========================================================= */
+
+.promo-octubre {
+
+    position: fixed;
+
+    top: 280px;
+    right: 0;
+
+    z-index: 998;
+
+    width: 85px;
+    min-height: 75px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    background: #f5b2ca;
+
+    border-radius: 15px 0 0 15px;
 
     display: flex;
 
@@ -136,138 +252,431 @@
 
     align-items: center;
 
+    justify-content: center;
+
     text-align: center;
 
-    line-height: 1.3;
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+
 }
 
 
-/* Título */
+.promo-octubre:hover {
 
-.evento-nube-contenido strong {
+    transform: translateX(-5px);
 
-    color: #d4145a;
+    background: #f3a6c1;
+
+}
+
+
+.promo-octubre span {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+    margin-bottom: 4px;
+
+}
+
+
+.promo-octubre strong {
+
+    display: block;
+
+    color: #111111;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.promo-octubre small {
+
+    color: #111111;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =========================================================
+   EMPRENDE DESDE $100.000
+   ========================================================= */
+
+.promo-emprende {
+
+    position: fixed;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 997;
+
+    padding: 12px 20px;
+
+    background: #f5b2ca;
+
+    color: #111111;
+
+    border-radius: 30px;
 
     font-size: 13px;
 
-    letter-spacing: 0.8px;
+    font-weight: 600;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
 
 }
 
 
-/* Subtítulo */
+.promo-emprende:hover {
 
-.evento-nube-contenido small {
+    transform: translateY(-3px);
 
-    margin-top: 5px;
-
-    color: #555;
-
-    font-size: 10px;
-
-    line-height: 1.4;
+    background: #f3a6c1;
 
 }
 
 
-/* Brillitos */
+/* =========================================================
+   BADGE PROMOCIONAL GENERAL
+   ========================================================= */
 
-.nube-decoracion {
+.badge-evento {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    background: var(--ali-rosa-claro);
+
+    color: var(--ali-rosa-fuerte);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   BANNER DE OCTUBRE
+   PARA USAR EN PROMOS.HTML
+   ========================================================= */
+
+.banner-octubre {
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 70px 25px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111111 0%,
+            #1b1b1b 60%,
+            #30211d 100%
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+
+}
+
+
+/* DECORACIÓN */
+
+.banner-octubre::before {
+
+    content: "✦";
+
+    position: absolute;
+
+    top: 25px;
+    left: 10%;
+
+    color: #f3a6c1;
+
+    font-size: 22px;
+
+}
+
+
+.banner-octubre::after {
+
+    content: "🍂";
+
+    position: absolute;
+
+    right: 10%;
+    bottom: 20px;
+
+    font-size: 30px;
+
+}
+
+
+/* CONTENIDO */
+
+.banner-octubre h2 {
+
+    position: relative;
+
+    z-index: 1;
+
+    margin: 0 0 12px;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+}
+
+
+.banner-octubre p {
+
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #dddddd;
 
     font-size: 16px;
 
-    animation:
-        brilloEvento
-        2s ease-in-out infinite;
-}
-
-
-/* =====================================================
-   ☁️ ANIMACIÓN DE FLOTACIÓN
-   ===================================================== */
-
-@keyframes flotarNubeSeptiembre {
-
-    0%,
-    100% {
-
-        transform:
-            translateY(0);
-
-    }
-
-    50% {
-
-        transform:
-            translateY(-8px);
-
-    }
+    line-height: 1.7;
 
 }
 
 
-/* =====================================================
-   ✨ ANIMACIÓN DE BRILLO
-   ===================================================== */
+/* BOTÓN */
 
-@keyframes brilloEvento {
+.banner-octubre a {
 
-    0%,
-    100% {
+    position: relative;
 
-        opacity: 1;
+    z-index: 1;
 
-        transform:
-            scale(1);
+    display: inline-flex;
 
-    }
+    align-items: center;
 
-    50% {
+    justify-content: center;
 
-        opacity: 0.5;
+    padding: 13px 25px;
 
-        transform:
-            scale(1.2);
+    background: #f3a6c1;
 
-    }
+    color: #111111;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
 
 }
 
 
-/* =====================================================
-   📱 CELULARES
-   ===================================================== */
+.banner-octubre a:hover {
+
+    transform: translateY(-3px);
+
+    background: #ffffff;
+
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
 
 @media (max-width: 600px) {
 
-    .evento-nube-septiembre {
+
+    /* MENSAJE */
+
+    .mensaje-post-menu {
+
+        padding: 9px 12px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.5px;
+
+    }
+
+
+    /* NUBE OCTUBRE */
+
+    .evento-nube-octubre {
 
         top: 450px;
-        right: 10px;
+
+        right: 12px;
 
         width: 245px;
 
-        min-height: 68px;
+        padding: 16px 20px;
 
-        padding: 11px 12px;
+        border-radius: 45px;
 
-        gap: 5px;
-
-        border-radius: 40px;
     }
 
-    .evento-nube-contenido strong {
-        font-size: 10px;
-        letter-spacing: 0.5px;
-    }
 
-    .evento-nube-contenido small {
-        font-size: 8px;
-        margin-top: 3px;
-    }
+    .evento-nube-octubre strong {
 
-    .nube-decoracion {
         font-size: 12px;
+
+    }
+
+
+    .evento-nube-octubre span {
+
+        font-size: 10px;
+
+    }
+
+
+    .evento-nube-octubre small {
+
+        font-size: 9px;
+
+    }
+
+
+    /* PROMO */
+
+    .promo-octubre {
+
+        top: 250px;
+
+        width: 75px;
+
+        min-height: 65px;
+
+        padding: 8px;
+
+    }
+
+
+    .promo-octubre span {
+
+        font-size: 17px;
+
+    }
+
+
+    .promo-octubre strong {
+
+        font-size: 9px;
+
+    }
+
+
+    .promo-octubre small {
+
+        font-size: 8px;
+
+    }
+
+
+    /* EMPRENDE */
+
+    .promo-emprende {
+
+        left: 12px;
+
+        bottom: 15px;
+
+        padding: 10px 15px;
+
+        font-size: 11px;
+
+    }
+
+
+    /* BANNER */
+
+    .banner-octubre {
+
+        padding: 55px 20px;
+
+    }
+
+
+    .banner-octubre h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .banner-octubre p {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .evento-nube-octubre {
+
+        top: 420px;
+
+        right: 8px;
+
+        width: 220px;
+
     }
 
 }
